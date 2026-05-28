@@ -66,6 +66,10 @@ body {
   color: inherit;
 }
 
+.hero-panel .difficulty-badge {
+  color: #1f2937; /* belt-and-suspenders: prevent hero white-text cascade bleeding in */
+}
+
 .hero-tagline {
   max-width: 44rem;
   margin: 0.75rem 0 0;
@@ -128,6 +132,7 @@ body {
   border-radius: 999px;
   background: var(--surface-soft);
   border: 1px solid rgba(0, 120, 212, 0.16);
+  color: #1f2937; /* dark slate, readable on all difficulty-N light backgrounds */
   white-space: nowrap;
 }
 

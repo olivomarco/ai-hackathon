@@ -53,3 +53,18 @@
 - `.squad/decisions/inbox/linus-layout-defaults.md` — full decision record written
 
 **Deployed:** Committed and pushed to `main`; Pages workflow triggered.
+
+---
+
+## Team Update — 2026-05-28T21:08:00+01:00 — Difficulty badge contrast fix
+
+**Session:** Fixed invisible `.difficulty-badge` text inside `.hero-panel`
+
+**Root cause confirmed:** `.hero-panel` sets `color: white` on its dark-blue background. The cascade rule `{ color: inherit; }` propagated white text to all descendants. `.meta-badge` has its own explicit `color: #fff` + dark bg — fine. But `.difficulty-badge` declared no `color:` at all, so it inherited white text and rendered it on its light pastel backgrounds (`#edf8f0`, etc.) — invisible.
+
+**Changes made:**
+- `docs/_sass/custom/custom.scss` — added `color: #1f2937` to `.difficulty-badge` base rule (primary fix); added `.hero-panel .difficulty-badge { color: #1f2937; }` scoped override (defensive belt-and-suspenders)
+- `.squad/decisions/inbox/linus-difficulty-badge-contrast.md` — full decision record written
+- Colour ramp verified: green → blue → purple → orange → red (easy → hard) — palette correct, no changes needed
+
+**Deployed:** Committed and pushed to `main`; Pages workflow triggered.
