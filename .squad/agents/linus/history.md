@@ -38,3 +38,18 @@
 - **Platform resilience discovered** — Serial agent dispatch works around 401 outages (parallel spawn causes race conditions)
 
 **Next:** Marco needs to `git push` to deploy CSS fix to live site; maintainers must run `cd docs && bundle install` to regenerate Gemfile.lock.
+
+---
+
+## Team Update — 2026-05-28T21:00:00+01:00 — Layout defaults fix
+
+**Session:** Diagnosed & fixed missing `layout: default` — site was returning bare HTML fragments with no chrome
+
+**Root cause confirmed:** No page declared `layout:` in front-matter and `_config.yml` had no `defaults:` block. Jekyll compiled Markdown to fragments but never applied JTD's `_layouts/default.html` shell, so no `<html>`, `<head>`, stylesheet link, sidebar, or body ever rendered. CSS compiled fine — it just was never linked.
+
+**Changes made:**
+- `docs/_config.yml` — added `defaults:` block setting `layout: default` for all pages (`path: ""`); fixed stale title (`"Azure AI Foundry"` → `"Microsoft Foundry"`)
+- `docs/_sass/custom/custom.scss` — moved from wrong path (`_sass/custom.scss`) to JTD's auto-include path (`_sass/custom/custom.scss`); all custom styles now active
+- `.squad/decisions/inbox/linus-layout-defaults.md` — full decision record written
+
+**Deployed:** Committed and pushed to `main`; Pages workflow triggered.

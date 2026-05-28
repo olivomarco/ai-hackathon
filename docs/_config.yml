@@ -1,4 +1,4 @@
-title: "WTH: Build Intelligent Apps with Azure AI Foundry"
+title: "WTH: Build Intelligent Apps with Microsoft Foundry"
 description: "A What The Hack hackathon — from prompt to production"
 baseurl: "/ai-hackathon"
 url: "https://olivomarco.github.io"
@@ -45,3 +45,10 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - node_modules/
+
+# Apply just-the-docs default layout to every page that doesn't override it
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
