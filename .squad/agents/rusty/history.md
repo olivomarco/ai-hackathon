@@ -39,7 +39,31 @@
 
 ---
 
-## Team Update — 2026-05-28 Session Complete
+## Session Update — 2026-05-28: Inline Challenge Content + Coach Pages
+
+**Session:** Inline full challenge content and add per-challenge coach pages  
+**Requested by:** Marco (olivomarco)
+
+### What changed
+
+- **7 student challenge pages updated** (`docs/challenges/challenge-00.md` through `challenge-06.md`): replaced the "Open the full challenge guide on GitHub" callout-tip with the full hands-on content inlined from `challenges/*/README.md`. Each page now contains the complete Step-by-step, Success Criteria, Tips, and Advanced sections. A new Codespaces-oriented callout-info replaces the old GitHub link.
+- **7 coach pages created** (`docs/challenges/challenge-00-coach.md` through `challenge-06-coach.md`): each coach page renders the corresponding `challenges/*/solution.md` content inside the JTD theme with `nav_exclude: true` (hidden from sidebar navigation, visible to search and linked from Coach Hub).
+- **Coach Hub updated** (`docs/coach-hub.md`): added a "Per-challenge coach notes" section with a table linking to all 7 coach pages. Updated the "Solution guides" section to acknowledge the new on-site pages.
+- **Decisions file written**: `.squad/decisions/inbox/rusty-inline-challenge-content.md` documents the reasoning behind inlining (Jekyll cannot `include_relative` outside the source dir), the drift risk between READMEs and docs pages, and the `nav_exclude: true` rationale for coach pages.
+- **GitHub link removal verified**: no `github.com/olivomarco/ai-hackathon/(tree|blob)/main/challenges/` URLs remain in `docs/`.
+
+### Style notes applied
+
+- Source README `> Note:` blockquotes converted to `<div class="callout-warning" markdown="1">` for visual consistency.
+- Challenge-03 solution.md coach note blockquote converted to callout-warning in the coach page.
+- No em-dashes introduced in prose.
+- No promotional vocabulary added.
+- Codespaces callout uses folder paths (informational text, not URLs).
+
+### Drift risk acknowledged
+
+`challenges/*/README.md` (Codespaces) and `docs/challenges/challenge-XX.md` (Pages) are now two sources of truth. Future content changes must be applied to both. See the decisions file for the full risk note.
+
 
 **Session:** Fact-check & CSS fix (multi-batch agent work)
 

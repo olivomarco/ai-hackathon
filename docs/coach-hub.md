@@ -73,9 +73,27 @@ Call out good debugging, clear prompt design, and smart teamwork. Teams gain ene
 | “RAG answers are off-topic” | Weak retrieval or poor chunk quality | Verify indexing, source data, and whether grounding is actually enabled. |
 | “Nothing works anymore” | Several changes landed at once | Roll back to the last known-good step and recover incrementally. |
 
+## Per-challenge coach notes
+
+Each challenge has a coach-only reference page with the expected solution path, common blockers, and timing tips. These pages are hidden from the main navigation so students do not stumble into them.
+
+<div class="challenge-card">
+
+| Challenge | Coach view |
+| --- | --- |
+| 00 — Setup & Orientation | [Coach notes]({{ '/challenges/challenge-00-coach' | relative_url }}) |
+| 01 — First Model Deployment | [Coach notes]({{ '/challenges/challenge-01-coach' | relative_url }}) |
+| 02 — Prompt Engineering | [Coach notes]({{ '/challenges/challenge-02-coach' | relative_url }}) |
+| 03 — Prompt Flow | [Coach notes]({{ '/challenges/challenge-03-coach' | relative_url }}) |
+| 04 — RAG | [Coach notes]({{ '/challenges/challenge-04-coach' | relative_url }}) |
+| 05 — Evaluation | [Coach notes]({{ '/challenges/challenge-05-coach' | relative_url }}) |
+| 06 — Deploy & Integrate | [Coach notes]({{ '/challenges/challenge-06-coach' | relative_url }}) |
+
+</div>
+
 ## Solution guides are in the repo
 
-Coach solution guides are intentionally not published on this site. Clone the repository and use `challenges/*/solution.md` as your back-pocket reference when teams need structured rescue help.
+Coach solution guides are published as themed pages on this site (see the table above) and are also available as raw files in the repository. Clone the repository and use `challenges/*/solution.md` as a back-pocket reference when teams need structured rescue help without opening a browser.
 
 <p class="coach-note">Use solution guides to restore momentum, not to short-circuit discovery.</p>
 

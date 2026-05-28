@@ -55,9 +55,176 @@ This is also where production thinking starts to matter. Teams are now packaging
 - [Flask quickstart](https://flask.palletsprojects.com/en/stable/quickstart/): lightweight path for the local integration app.
 - [Requests: HTTP for Humans](https://requests.readthedocs.io/en/latest/): REST request patterns and response handling.
 
-<div class="callout-tip" markdown="1">
-Ready to ship the experience into an app? **Open the full challenge guide on GitHub:** [challenges/challenge-06-deploy](https://github.com/olivomarco/ai-hackathon/tree/main/challenges/challenge-06-deploy), or open the repository in Codespaces (badge above) and follow the README in `challenges/challenge-06-deploy/`.
+<div class="callout-info" markdown="1">
+**Working in Codespaces?** The scripts and starter files for this challenge live in `challenges/challenge-06-deploy/` inside the repository. Open the repo in Codespaces (button in the page header), navigate to that folder, and run the commands shown below from there.
 </div>
+
+## Step-by-step
+
+### Step 1: Package the Prompt Flow
+
+Start from the Prompt Flow version you validated in Challenges 04 and 05.
+
+Before deploying, confirm:
+
+- the flow works end to end
+- required connections are valid
+- prompt, retrieval, and formatting steps are saved
+- any needed environment settings are documented
+
+Think of this as the version you would be comfortable showing to a real stakeholder.
+
+### Step 2: Deploy to a Managed Online Endpoint
+
+In Microsoft Foundry, deploy the flow to a **Managed Online Endpoint**.
+
+As you configure deployment, pay attention to:
+
+- endpoint name
+- authentication method
+- instance or scaling settings
+- deployment status and readiness
+
+Wait for the endpoint to report that it is ready before debugging client code.
+
+### Step 3: Test the endpoint with REST
+
+Test the deployment outside the studio.
+
+Example `curl` pattern:
+
+```bash
+curl -X POST "$ENDPOINT_URL" \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer $ENDPOINT_KEY" \
+  -d '{
+    "question": "What documents are needed for financial aid?"
+  }'
+```
+
+Example Python client pattern:
+
+```python
+import os
+import requests
+
+endpoint = os.getenv("UNIVERSITY_QA_ENDPOINT")
+key = os.getenv("UNIVERSITY_QA_KEY")
+
+payload = {"question": "How do I contact campus housing?"}
+headers = {
+    "Content-Type": "application/json",
+    "Authorization": f"Bearer {key}",
+}
+
+response = requests.post(endpoint, json=payload, headers=headers, timeout=30)
+print(response.json())
+```
+
+Make sure the endpoint returns a valid response before you move on to the web app.
+
+### Step 4: Create the Flask web app
+
+Create this file:
+
+```text
+challenges/challenge-06-deploy/app.py
+```
+
+Your app should:
+
+- display a text input form
+- send the question to the managed endpoint
+- show the answer
+- show source citations when available
+
+Starter scaffold:
+
+```python
+import os
+import requests
+from dotenv import load_dotenv
+from flask import Flask, render_template_string, request
+
+load_dotenv()
+app = Flask(__name__)
+
+HTML = """
+<!doctype html>
+<title>University Q&A Assistant</title>
+<h1>Northfield University Q&A Assistant</h1>
+<form method="post">
+  <input type="text" name="question" style="width: 420px;" placeholder="Ask a university question">
+  <button type="submit">Ask</button>
+</form>
+{% if answer %}
+  <h2>Answer</h2>
+  <p>{{ answer }}</p>
+{% endif %}
+{% if citations %}
+  <h3>Sources</h3>
+  <ul>
+  {% for citation in citations %}
+    <li>{{ citation }}</li>
+  {% endfor %}
+  </ul>
+{% endif %}
+"""
+
+@app.route("/", methods=["GET", "POST"])
+def home():
+    answer = None
+    citations = []
+    if request.method == "POST":
+        question = request.form["question"]
+        # TODO: call managed endpoint and map the response to answer/citations
+    return render_template_string(HTML, answer=answer, citations=citations)
+
+if __name__ == "__main__":
+    app.run(debug=True)
+```
+
+### Step 5: Run the Flask app in the devcontainer
+
+Install any missing dependencies and run the app locally.
+
+Suggested check:
+
+```bash
+python challenges/challenge-06-deploy/app.py
+```
+
+Open the local port, submit a question, and verify that the UI renders both the answer and citations.
+
+### Step 6: Optional cloud deployment
+
+If time allows, deploy the Flask app to **Azure App Service** or **Azure Container Apps**.
+
+This is optional, but it is a strong final demo because it shows both the AI endpoint and the user-facing app running in Azure.
+
+## Success Criteria
+
+- [ ] Flow deployed to managed online endpoint
+- [ ] Endpoint tested via REST call and returns a valid response
+- [ ] Flask app created and running locally
+- [ ] Web UI shows response and citations
+- [ ] Bonus: Flask app deployed to Azure App Service or Container Apps
+
+## Tips
+
+- **Endpoint authentication**: check whether your deployment expects a bearer token, key, or another auth pattern.
+- **CORS and frontend choices**: for this challenge, a server-side Flask app is simpler than calling the endpoint directly from browser JavaScript.
+- **Cost management**: stop or scale down endpoints after the hackathon if the event guidance requires it.
+- Endpoint cold starts can look like failures. Confirm readiness and retry once before rewriting your app.
+- Keep the UI simple. The goal is integration, not front-end polish.
+
+## Advanced
+
+If you finish early:
+
+- Add **streaming responses** to the Flask app
+- Support **conversation history** so the assistant can handle follow-up questions
+- Sketch a **CI/CD flow** for updating the endpoint when the Prompt Flow changes
 
 <nav class="page-nav">
   <a href="{{ '/challenges/challenge-05' | relative_url }}">← Previous</a>
