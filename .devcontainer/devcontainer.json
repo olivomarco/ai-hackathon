@@ -1,0 +1,42 @@
+{
+  "name": "WTH AI Foundry Hackathon",
+  "image": "mcr.microsoft.com/devcontainers/python:3.11",
+  "features": {
+    "ghcr.io/devcontainers/features/azure-cli:1": {},
+    "ghcr.io/devcontainers/features/node:1": { "version": "20" },
+    "ghcr.io/devcontainers/features/github-cli:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-toolsai.jupyter",
+        "ms-toolsai.promptflow",
+        "ms-azuretools.vscode-azurefunctions",
+        "ms-vscode.azure-account",
+        "ms-azuretools.vscode-bicep",
+        "github.copilot",
+        "github.copilot-chat",
+        "redhat.vscode-yaml"
+      ],
+      "settings": {
+        "python.defaultInterpreterPath": "/usr/local/bin/python",
+        "python.terminal.activateEnvironment": true,
+        "editor.formatOnSave": true,
+        "files.autoSave": "afterDelay",
+        "terminal.integrated.defaultProfile.linux": "bash"
+      }
+    }
+  },
+  "postCreateCommand": "bash .devcontainer/post-create.sh",
+  "remoteEnv": {
+    "AZURE_AI_ENDPOINT": "${localEnv:AZURE_AI_ENDPOINT}",
+    "AZURE_AI_KEY": "${localEnv:AZURE_AI_KEY}",
+    "AZURE_SUBSCRIPTION_ID": "${localEnv:AZURE_SUBSCRIPTION_ID}",
+    "AZURE_RESOURCE_GROUP": "${localEnv:AZURE_RESOURCE_GROUP}"
+  },
+  "forwardPorts": [8080],
+  "mounts": [],
+  "shutdownAction": "stopContainer"
+}

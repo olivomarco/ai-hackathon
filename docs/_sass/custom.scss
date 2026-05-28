@@ -1,0 +1,255 @@
+$link-color: #0078d4;
+
+:root {
+  --azure-blue: #0078d4;
+  --azure-blue-deep: #005a9e;
+  --azure-cyan: #50e6ff;
+  --ink-strong: #102542;
+  --ink-soft: #44546a;
+  --surface-soft: #f3f9fd;
+  --surface-glow: #e6f4ff;
+  --warning-bg: #fff4e5;
+  --warning-border: #ffb900;
+  --tip-bg: #ecfff6;
+  --tip-border: #16c47f;
+  --info-bg: #edf6ff;
+  --info-border: #4aa3ff;
+}
+
+body {
+  color: var(--ink-strong);
+}
+
+.main-content-wrap {
+  background:
+    radial-gradient(circle at top right, rgba(80, 230, 255, 0.12), transparent 26%),
+    linear-gradient(180deg, rgba(0, 120, 212, 0.05), transparent 18%);
+}
+
+.hero-panel {
+  position: relative;
+  margin: 0 0 2rem;
+  padding: 2.25rem;
+  background: linear-gradient(135deg, #061a2f 0%, #0b3157 50%, #0078d4 100%);
+  color: #fff;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  box-shadow: 0 24px 60px rgba(6, 26, 47, 0.2);
+}
+
+.hero-panel::after {
+  content: "";
+  position: absolute;
+  inset: auto -10% -35% auto;
+  width: 18rem;
+  height: 18rem;
+  background: radial-gradient(circle, rgba(80, 230, 255, 0.35), transparent 68%);
+}
+
+.hero-kicker {
+  display: inline-block;
+  margin-bottom: 0.85rem;
+  padding: 0.35rem 0.7rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 999px;
+}
+
+.hero-panel h1,
+.hero-panel p,
+.hero-panel a,
+.hero-panel strong {
+  color: inherit;
+}
+
+.hero-tagline {
+  max-width: 44rem;
+  margin: 0.75rem 0 0;
+  font-size: 1.2rem;
+  line-height: 1.55;
+}
+
+.quick-grid {
+  display: grid;
+  gap: 1rem;
+  margin: 2rem 0;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+
+.quick-card {
+  padding: 1.1rem 1rem;
+  background: #fff;
+  border: 1px solid rgba(0, 120, 212, 0.12);
+  border-radius: 1rem;
+  box-shadow: 0 12px 30px rgba(16, 37, 66, 0.06);
+}
+
+.quick-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.4rem;
+}
+
+.challenge-card {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  margin: 1.5rem 0 2rem;
+  background: #fff;
+  border: 1px solid rgba(0, 120, 212, 0.12);
+  border-radius: 1rem;
+  box-shadow: 0 18px 44px rgba(16, 37, 66, 0.08);
+}
+
+.challenge-card table {
+  min-width: 100%;
+}
+
+.challenge-card th {
+  background: linear-gradient(180deg, #eef7ff 0%, #e4f2ff 100%);
+}
+
+.challenge-card th,
+.challenge-card td {
+  vertical-align: middle;
+}
+
+.difficulty-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.18rem;
+  padding: 0.22rem 0.55rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  line-height: 1;
+  border-radius: 999px;
+  background: var(--surface-soft);
+  border: 1px solid rgba(0, 120, 212, 0.16);
+  white-space: nowrap;
+}
+
+.difficulty-1 { background: #edf8f0; }
+.difficulty-2 { background: #eef6ff; }
+.difficulty-3 { background: #f4f0ff; }
+.difficulty-4 { background: #fff3e6; }
+.difficulty-5 { background: #ffe8e8; }
+
+.callout-tip,
+.callout-warning,
+.callout-info {
+  margin: 1.25rem 0;
+  padding: 1rem 1rem 1rem 1.1rem;
+  border-left: 4px solid;
+  border-radius: 0.9rem;
+}
+
+.callout-tip {
+  background: var(--tip-bg);
+  border-color: var(--tip-border);
+}
+
+.callout-warning {
+  background: var(--warning-bg);
+  border-color: var(--warning-border);
+}
+
+.callout-info {
+  background: var(--info-bg);
+  border-color: var(--info-border);
+}
+
+.cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.coach-note {
+  font-size: 0.96rem;
+  color: var(--ink-soft);
+}
+
+@media (max-width: 799px) {
+  .hero-panel {
+    padding: 1.5rem;
+    border-radius: 1rem;
+  }
+
+  .hero-panel h1 {
+    font-size: 2rem;
+  }
+
+  .hero-tagline {
+    font-size: 1rem;
+  }
+
+  .quick-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-row .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .table-wrapper,
+  .challenge-card {
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+    width: calc(100% + 1rem);
+    border-radius: 0.85rem;
+  }
+}
+
+/* wave2 challenge pages */
+.meta-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 1.2rem;
+}
+
+.meta-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.35rem 0.7rem;
+  font-size: 0.84rem;
+  font-weight: 700;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 999px;
+}
+
+.challenge-hero {
+  margin-bottom: 2rem;
+}
+
+.challenge-hero h1 {
+  margin-bottom: 0.5rem;
+}
+
+.page-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 2.25rem 0 0.75rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(0, 120, 212, 0.14);
+}
+
+.page-nav a {
+  font-weight: 700;
+}
+
+@media (max-width: 799px) {
+  .page-nav {
+    flex-direction: column;
+  }
+}
+

@@ -1,0 +1,46 @@
+title: "WTH: Build Intelligent Apps with Azure AI Foundry"
+description: "A What The Hack hackathon — from prompt to production"
+baseurl: "/ai-hackathon"
+url: "https://microsoft.github.io"
+
+theme: just-the-docs
+
+# Theme configuration
+color_scheme: default
+search_enabled: true
+search:
+  heading_level: 2
+  previews: 3
+  preview_words_before: 5
+  preview_words_after: 10
+  tokenizer_separator: /[\s/]+/
+  rel_url: true
+  button: false
+
+# Navigation
+nav_sort: case_insensitive
+nav_external_links:
+  - title: Azure AI Foundry Docs
+    url: https://learn.microsoft.com/azure/ai-studio/
+  - title: GitHub Repo
+    url: https://github.com/microsoft/ai-hackathon
+
+# Footer
+footer_content: "WTH AI Hackathon — Built with ❤️ for students and coaches"
+
+# Aux links
+aux_links:
+  "🚀 Open in Codespaces":
+    - "https://github.com/codespaces/new"
+  "💬 Discussion":
+    - "https://github.com/microsoft/ai-hackathon/discussions"
+
+# Plugins
+plugins:
+  - jekyll-seo-tag
+
+# Build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
