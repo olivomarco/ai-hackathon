@@ -68,3 +68,18 @@
 - Colour ramp verified: green → blue → purple → orange → red (easy → hard) — palette correct, no changes needed
 
 **Deployed:** Committed and pushed to `main`; Pages workflow triggered.
+
+---
+
+## Team Update — 2026-05-28T21:25:00+01:00 — Session finalization (Scribe)
+
+**Session:** css-rendering-and-in-pages-content-final-fix (final orchestration)
+
+**Scribe actions completed:**
+- Merged `.squad/decisions/inbox/` (3 decision files: linus-layout-defaults.md, linus-difficulty-badge-contrast.md, rusty-inline-challenge-content.md) → `decisions.md`
+- Wrote orchestration logs for linus-4 (d65afcf), linus-5 (ec87c21), rusty-5 (62d08e5)
+- Wrote session log documenting the three-agent flow and technical decisions
+- Updated agent history files (linus, rusty)
+- Staged and committed `.squad/` files to main with chore message
+
+**Status:** Session archived. All decisions, logs, and orchestration records persisted.
