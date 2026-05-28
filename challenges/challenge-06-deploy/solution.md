@@ -1,4 +1,4 @@
-# Challenge 06: Deploy & Integrate — Coach's Guide
+# Challenge 06: Deploy & Integrate: Coach's Guide
 
 ## Overview
 This final challenge is the celebration point of the hackathon. Students should connect the dots from model deployment, prompt design, orchestration, grounding, and evaluation into one deployable experience they can demo.

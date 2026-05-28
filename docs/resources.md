@@ -9,19 +9,19 @@ nav_order: 4
   <p class="hero-tagline">A curated set of official docs, SDK guides, and community links for participants who want context fast. Use this page when you need the right reference without digging through search results mid-hackathon.</p>
 </div>
 
-## Azure AI Foundry
+## Microsoft Foundry
 
 <div class="quick-grid">
   <div class="quick-card">
-    <h3><a href="https://learn.microsoft.com/azure/ai-foundry/">Azure AI Foundry documentation</a></h3>
+    <h3><a href="https://learn.microsoft.com/azure/ai-foundry/">Microsoft Foundry documentation</a></h3>
     <p>The official hub for concepts, how-to guides, and platform capabilities.</p>
   </div>
   <div class="quick-card">
-    <h3><a href="https://learn.microsoft.com/azure/ai-foundry/how-to/create-projects">Create projects in Azure AI Foundry</a></h3>
+    <h3><a href="https://learn.microsoft.com/azure/ai-foundry/how-to/create-projects">Create projects in Microsoft Foundry</a></h3>
     <p>Project setup guidance, prerequisites, and role requirements.</p>
   </div>
   <div class="quick-card">
-    <h3><a href="https://learn.microsoft.com/azure/ai-foundry/how-to/deploy-models-openai">Deploy models in Azure AI Foundry</a></h3>
+    <h3><a href="https://learn.microsoft.com/azure/ai-foundry/how-to/deploy-models-openai">Deploy models in Microsoft Foundry</a></h3>
     <p>Deployment flow for taking a model from catalog to runnable endpoint.</p>
   </div>
   <div class="quick-card">
@@ -51,11 +51,11 @@ nav_order: 4
 
 <div class="quick-grid">
   <div class="quick-card">
-    <h3><a href="https://learn.microsoft.com/azure/ai-foundry/concepts/prompt-engineering">Prompt engineering concepts</a></h3>
-    <p>Azure AI Foundry guidance on structure, clarity, examples, and iteration.</p>
+    <h3><a href="https://learn.microsoft.com/azure/ai-services/openai/concepts/prompt-engineering">Prompt engineering concepts</a></h3>
+    <p>Azure AI guidance on structure, clarity, examples, and iteration for effective prompts.</p>
   </div>
   <div class="quick-card">
-    <h3><a href="https://learn.microsoft.com/azure/ai-foundry/how-to/playgrounds">Playgrounds in Azure AI Foundry</a></h3>
+    <h3><a href="https://learn.microsoft.com/azure/ai-foundry/quickstarts/get-started-playground">Playgrounds in Microsoft Foundry</a></h3>
     <p>How to test prompts, compare behaviors, and iterate quickly in the portal.</p>
   </div>
   <div class="quick-card">
@@ -68,7 +68,7 @@ nav_order: 4
 
 <div class="quick-grid">
   <div class="quick-card">
-    <h3><a href="https://learn.microsoft.com/azure/ai-foundry/concepts/retrieval-augmented-generation">RAG in Azure AI Foundry</a></h3>
+    <h3><a href="https://learn.microsoft.com/azure/ai-foundry/concepts/retrieval-augmented-generation">RAG in Microsoft Foundry</a></h3>
     <p>Architecture overview for retrieval-backed generation with Azure services.</p>
   </div>
   <div class="quick-card">
@@ -76,7 +76,7 @@ nav_order: 4
     <p>How embeddings and vector indexes improve semantic retrieval.</p>
   </div>
   <div class="quick-card">
-    <h3><a href="https://learn.microsoft.com/azure/ai-foundry/how-to/connections-add-data">Use your data in Azure AI Foundry</a></h3>
+    <h3><a href="https://learn.microsoft.com/azure/ai-foundry/how-to/index-add">Add data and build indexes in Microsoft Foundry</a></h3>
     <p>Connect data, build indexes, and create grounded chat experiences.</p>
   </div>
   <div class="quick-card">
@@ -89,11 +89,11 @@ nav_order: 4
 
 <div class="quick-grid">
   <div class="quick-card">
-    <h3><a href="https://learn.microsoft.com/azure/ai-foundry/concepts/evaluation">Azure AI evaluation concepts</a></h3>
+    <h3><a href="https://learn.microsoft.com/azure/ai-foundry/concepts/evaluation-approach-gen-ai">Azure AI evaluation concepts</a></h3>
     <p>Official guidance for evaluators, datasets, and evaluation workflows.</p>
   </div>
   <div class="quick-card">
-    <h3><a href="https://learn.microsoft.com/azure/ai-foundry/how-to/evaluate-generative-ai-app">Evaluate with Azure AI Foundry</a></h3>
+    <h3><a href="https://learn.microsoft.com/azure/ai-foundry/how-to/evaluate-generative-ai-app">Evaluate with Microsoft Foundry</a></h3>
     <p>Practical how-to guide for running built-in evaluators on your application.</p>
   </div>
   <div class="quick-card">
@@ -106,7 +106,7 @@ nav_order: 4
 
 <div class="quick-grid">
   <div class="quick-card">
-    <h3><a href="https://github.com/microsoft/ai-hackathon/discussions">GitHub Discussions</a></h3>
+    <h3><a href="https://github.com/olivomarco/ai-hackathon/discussions">GitHub Discussions</a></h3>
     <p>Ask questions, share wins, and compare patterns with other participants and coaches.</p>
   </div>
   <div class="quick-card">

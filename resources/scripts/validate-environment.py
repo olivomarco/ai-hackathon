@@ -26,12 +26,13 @@ except ImportError:  # pragma: no cover - graceful fallback when rich is missing
 ROOT = Path.cwd()
 ENV_PATH = ROOT / ".env"
 REQUIRED_VARS = [
-    "AZURE_AI_ENDPOINT",
-    "AZURE_AI_KEY",
+    "FOUNDRY_PROJECT_ENDPOINT",
     "AZURE_SUBSCRIPTION_ID",
     "AZURE_RESOURCE_GROUP",
 ]
 OPTIONAL_VARS = [
+    "FOUNDRY_MODEL_NAME",
+    "AZURE_AI_KEY",  # key-based auth alternative to DefaultAzureCredential
     "AZURE_OPENAI_ENDPOINT",
     "AZURE_OPENAI_API_KEY",
     "AZURE_OPENAI_DEPLOYMENT_NAME",
@@ -194,37 +195,43 @@ def main() -> int:
             critical=True,
         )
 
-    endpoint = merged_env.get("AZURE_AI_ENDPOINT")
+    endpoint = merged_env.get("FOUNDRY_PROJECT_ENDPOINT")
     api_key = merged_env.get("AZURE_AI_KEY")
     if endpoint and api_key and requests is not None:
         try:
             response = requests.get(endpoint, headers={"api-key": api_key}, timeout=10)
             status = "PASS" if response.status_code < 500 else "FAIL"
             reporter.add(
-                "Azure AI endpoint",
+                "Foundry project endpoint",
                 status,
                 f"Reachable at {endpoint} (HTTP {response.status_code})",
                 critical=True,
             )
         except Exception as exc:  # pragma: no cover - depends on local env
             reporter.add(
-                "Azure AI endpoint",
+                "Foundry project endpoint",
                 "FAIL",
                 f"Connectivity test failed for {endpoint}: {exc}",
                 critical=True,
             )
-    elif endpoint and api_key and requests is None:
+    elif endpoint and not api_key and requests is not None:
         reporter.add(
-            "Azure AI endpoint",
+            "Foundry project endpoint",
+            "WARN",
+            f"FOUNDRY_PROJECT_ENDPOINT is set but AZURE_AI_KEY is not. Using DefaultAzureCredential (az login) — no key test performed.",
+        )
+    elif endpoint and requests is None:
+        reporter.add(
+            "Foundry project endpoint",
             "FAIL",
             "requests is not installed, so endpoint connectivity could not be checked.",
             critical=True,
         )
     else:
         reporter.add(
-            "Azure AI endpoint",
+            "Foundry project endpoint",
             "WARN",
-            "Skipped because AZURE_AI_ENDPOINT and AZURE_AI_KEY are not both configured.",
+            "Skipped because FOUNDRY_PROJECT_ENDPOINT is not configured.",
         )
 
     az_path = shutil.which("az")

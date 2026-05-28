@@ -1,15 +1,22 @@
-azure-ai-projects>=1.0.0b4
+# Pinned to current stable versions as of 2026-05-28 (see .squad/decisions/inbox/livingston-version-audit.md)
+# azure-ai-projects 2.x is a MAJOR version bump from 1.0.0b4 — import path unchanged but
+# constructor now requires endpoint= kwarg (not connection string). Code samples must be verified.
+azure-ai-projects>=2.1.0
+# azure-ai-inference remains in beta (1.0.0b9 is still the latest stable release)
 azure-ai-inference>=1.0.0b9
-azure-ai-evaluation>=1.0.0b4
-azure-core>=1.30.0
-azure-search-documents>=11.4.0
-azure-identity>=1.15.0
-flask>=3.0.0
-openai>=1.35.0
-python-dotenv>=1.0.0
-requests>=2.31.0
-promptflow>=1.15.0
-promptflow-tools>=1.5.0
-jupyter>=1.0.0
-ipykernel>=6.29.0
-rich>=13.7.0
+azure-ai-evaluation>=1.16.9
+azure-core>=1.41.0
+# azure-search-documents 12.x is a major version bump from 11.x — verify code samples
+azure-search-documents>=12.0.0
+azure-identity>=1.25.0
+flask>=3.1.0
+# openai 2.x is a major version bump; chat.completions.create() still works but
+# responses.create() is now the preferred API — low breaking risk for existing samples
+openai>=2.0.0
+python-dotenv>=1.2.0
+requests>=2.34.0
+promptflow>=1.18.0
+promptflow-tools>=1.6.0
+jupyter>=1.1.0
+ipykernel>=7.0.0
+rich>=15.0.0

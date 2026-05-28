@@ -1,9 +1,11 @@
-# Challenge 03: Prompt Flow — Coach's Guide
+# Challenge 03: Prompt Flow: Coach's Guide
 
 ## Overview
 This challenge helps students move from a single prompt to a structured AI workflow. The goal is not just to make the University Q&A Assistant longer or more complex, but to make it more deliberate: classify the question, route it, answer it, then normalize the final tone.
 
 A strong team outcome is a flow with at least three nodes and clear separation of responsibilities. Students should see why orchestration matters when one assistant needs to handle different question types without relying on one overloaded system prompt.
+
+> **Coach note: Prompt Flow status:** Prompt Flow is in sustaining mode. Microsoft's investment for new orchestration work has shifted to the **Foundry Agent Service** (`azure-ai-projects` 2.x). Prompt Flow remains fully supported and is the correct tool for this challenge; the node-based DAG reasoning transfers well to Agent Service flows. If students ask about the future path, point them to [Foundry Agent Service](https://learn.microsoft.com/azure/ai-foundry/concepts/agents).
 
 ## Common Issues
 - **Connection or deployment errors**: Students often think the prompt is broken when the real problem is a missing or incorrect model connection.
@@ -42,3 +44,6 @@ This is a UI-heavy challenge, so budget extra time for navigation, node configur
 
 - **“What makes a good flow here?”**  
   Correct classification, reliable handoff between nodes, and a final response that feels consistent and student-friendly.
+
+- **"What's the difference between Prompt Flow and Foundry Agent Service?"**  
+  Prompt Flow is a DAG-based visual orchestration tool: good for explicit, inspectable step sequences. The Foundry Agent Service (via `azure-ai-projects` 2.x) is the newer model, better suited for dynamic, tool-calling agent loops. The patterns learned here apply to both.

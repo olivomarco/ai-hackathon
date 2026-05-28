@@ -7,7 +7,7 @@ nav_order: 3
 <div class="hero-panel challenge-hero">
   <span class="hero-kicker">Challenge 02 • Behavior design</span>
   <h1>Prompt Engineering</h1>
-  <p class="hero-tagline">Good AI apps are not just model choices—they are instruction choices. In this challenge, teams learn how deliberate prompting changes quality, consistency, and safety before any orchestration or retrieval layer is added.</p>
+  <p class="hero-tagline">Good AI apps depend on instruction choices as much as model choices. In this challenge, teams learn how deliberate prompting changes quality, consistency, and safety before any orchestration or retrieval layer is added.</p>
   <div class="meta-strip">
     <span class="meta-badge">⏱️ 1 hr</span>
     <span class="difficulty-badge difficulty-2">⭐⭐ Intermediate start</span>
@@ -19,7 +19,7 @@ nav_order: 3
 
 Prompting matters because it is the first layer of product design for an LLM-powered experience. A clear system prompt can make answers feel focused, safe, and useful; a vague one can make the same model seem unreliable, inconsistent, or off-topic.
 
-Participants explore four practical patterns—**persona**, **few-shot examples**, **chain-of-thought guidance**, and **output formatting**—so they can see which controls are best for shaping a university-style assistant. The goal is not magic phrasing; it is repeatable behavior design.
+Participants explore four practical patterns (**persona**, **few-shot examples**, **chain-of-thought guidance**, and **output formatting**) so they can see which controls are best for shaping a university-style assistant. The goal is not magic phrasing; it is repeatable behavior design.
 
 ## What participants will build
 
@@ -41,22 +41,22 @@ Participants explore four practical patterns—**persona**, **few-shot examples*
 ## Key concepts
 
 <div class="callout-info" markdown="1">
-- **System prompt** — the high-priority instruction layer that defines the assistant’s identity, rules, and response contract.
-- **Few-shot prompting** — guiding the model with a few representative examples of good inputs and outputs.
-- **Chain-of-thought** — prompting a model to reason through a task more carefully, while deciding what reasoning should or should not be exposed to users.
-- **Output format control** — requesting bullets, JSON, or constrained structures to make responses easier for humans and code to consume.
-- **Content safety** — shaping the app so unsafe, off-topic, or disallowed requests are refused, redirected, or handled carefully.
+- **System prompt**: the high-priority instruction layer that defines the assistant's identity, rules, and response contract.
+- **Few-shot prompting**: guiding the model with a few representative examples of good inputs and outputs.
+- **Chain-of-thought**: prompting a model to reason through a task more carefully, while deciding what reasoning should or should not be exposed to users.
+- **Output format control**: requesting bullets, JSON, or constrained structures to make responses easier for humans and code to consume.
+- **Content safety**: shaping the app so unsafe, off-topic, or disallowed requests are refused, redirected, or handled carefully.
 </div>
 
 ## Learn before you build
 
-- [Prompt engineering concepts](https://learn.microsoft.com/azure/ai-services/openai/concepts/prompt-engineering) — clear guidance on prompt structure and iteration.
-- [Use playgrounds in Microsoft Foundry](https://learn.microsoft.com/azure/ai-foundry/quickstarts/get-started-playground) — test prompt variations and compare outputs.
-- [Azure AI Content Safety overview](https://learn.microsoft.com/azure/ai-services/content-safety/overview) — moderation and prompt protection concepts.
-- [Develop generative AI solutions with Microsoft Foundry](https://learn.microsoft.com/training/browse/?products=azure-ai-foundry) — Microsoft Learn modules for stronger prompting practice.
+- [Prompt engineering concepts](https://learn.microsoft.com/azure/ai-services/openai/concepts/prompt-engineering): clear guidance on prompt structure and iteration.
+- [Use playgrounds in Microsoft Foundry](https://learn.microsoft.com/azure/ai-foundry/quickstarts/get-started-playground): test prompt variations and compare outputs.
+- [Azure AI Content Safety overview](https://learn.microsoft.com/azure/ai-services/content-safety/overview): moderation and prompt protection concepts.
+- [Develop generative AI solutions with Microsoft Foundry](https://learn.microsoft.com/training/browse/?products=azure-ai-foundry): Microsoft Learn modules for stronger prompting practice.
 
 <div class="callout-tip" markdown="1">
-Ready to refine the assistant behavior? **Open the full challenge guide on GitHub:** [challenges/challenge-02-prompt-engineering](https://github.com/olivomarco/ai-hackathon/tree/main/challenges/challenge-02-prompt-engineering) — or open the repository in Codespaces (badge above) and follow the README in `challenges/challenge-02-prompt-engineering/`.
+Ready to refine the assistant behavior? **Open the full challenge guide on GitHub:** [challenges/challenge-02-prompt-engineering](https://github.com/olivomarco/ai-hackathon/tree/main/challenges/challenge-02-prompt-engineering), or open the repository in Codespaces (badge above) and follow the README in `challenges/challenge-02-prompt-engineering/`.
 </div>
 
 <nav class="page-nav">

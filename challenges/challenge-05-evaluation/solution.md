@@ -1,4 +1,4 @@
-# Challenge 05: Evaluation & Responsible AI — Coach's Guide
+# Challenge 05: Evaluation & Responsible AI: Coach's Guide
 
 ## Overview
 This challenge teaches students to treat AI quality as something they can measure, discuss, and improve. The strongest teams will connect evaluation results back to design choices from earlier challenges instead of treating metrics as isolated numbers.

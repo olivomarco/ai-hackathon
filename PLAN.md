@@ -1,8 +1,8 @@
-# WTH AI Hackathon — Content Architecture Plan
+# WTH AI Hackathon: Content Architecture Plan
 
-> **"Build Intelligent Apps with Azure AI Foundry"**
+> **"Build Intelligent Apps with Microsoft Foundry"**
 >
-> A What The Hack hackathon-in-a-box that takes participants from zero to deploying an AI-powered application using Microsoft's Azure AI Foundry platform.
+> A What The Hack hackathon-in-a-box that takes participants from zero to deploying an AI-powered application using Microsoft Foundry.
 
 ---
 
@@ -10,8 +10,8 @@
 
 | Field | Detail |
 |-------|--------|
-| **Title** | Build Intelligent Apps with Azure AI Foundry |
-| **Tagline** | From prompt to production — build, evaluate, and deploy AI solutions |
+| **Title** | Build Intelligent Apps with Microsoft Foundry |
+| **Tagline** | From prompt to production: build, evaluate, and deploy AI solutions |
 | **Duration** | 1-day event (6–8 hours of challenge time) or 2-day event (relaxed pace with deeper exploration) |
 | **Team size** | 3–5 participants per team |
 | **Coach ratio** | 1 coach per 2–3 teams |
@@ -21,11 +21,11 @@
 **Participants (Students)**
 - University students (CS, Data Science, or adjacent) or early-career professionals
 - Comfortable with Python basics and REST APIs
-- No prior Azure or AI Foundry experience required
+- No prior Azure or Microsoft Foundry experience required
 
 **Coaches**
 - Experienced Azure practitioners (AI Engineers, Cloud Solution Architects)
-- Familiar with Azure AI Foundry, Azure OpenAI Service, and prompt engineering
+- Familiar with Microsoft Foundry, Azure OpenAI Service, and prompt engineering
 - Role: facilitate discovery, unblock teams, never give answers directly
 
 ### Prerequisites for Participants
@@ -39,7 +39,7 @@
 
 By the end of this hackathon, participants will be able to:
 
-1. Navigate Azure AI Foundry and create an AI project with connected resources
+1. Navigate Microsoft Foundry and create an AI project with connected resources
 2. Deploy and interact with models from the Azure AI model catalog
 3. Engineer effective prompts and implement prompt flow orchestration
 4. Build a grounded RAG (Retrieval-Augmented Generation) application
@@ -53,18 +53,18 @@ By the end of this hackathon, participants will be able to:
 ### Challenge 00: Setup & Orientation
 | Field | Detail |
 |-------|--------|
-| **Description** | Provision your Azure AI Foundry hub and project. Explore the studio interface, connect your Azure OpenAI resource, and verify your development environment works end-to-end. |
+| **Description** | Provision your Microsoft Foundry resource and project. Explore the portal interface, connect your Azure OpenAI resource, and verify your development environment works end-to-end. |
 | **Time** | 30 minutes |
 | **Difficulty** | Beginner |
 | **Dependencies** | None |
-| **Azure AI Foundry features** | AI Foundry Hub, Project creation, Resource connections, Model catalog browsing |
+| **Microsoft Foundry features** | Foundry resource, Project creation, Resource connections, Model catalog browsing |
 
 **Learning Objectives:**
-- Create an Azure AI Foundry hub and project
+- Create a Microsoft Foundry resource and project
 - Connect an Azure OpenAI Service resource
-- Navigate the AI Foundry studio (deployments, playground, catalog)
+- Navigate the Microsoft Foundry portal (deployments, playground, catalog)
 - Verify the devcontainer environment connects to Azure
-- Understand the relationship between hubs, projects, and resources
+- Understand the relationship between Foundry resources, projects, and connections
 
 ---
 
@@ -75,7 +75,7 @@ By the end of this hackathon, participants will be able to:
 | **Time** | 45 minutes |
 | **Difficulty** | Beginner |
 | **Dependencies** | Challenge 00 |
-| **Azure AI Foundry features** | Model catalog, Model deployments (MaaS/MaaP), AI Inference SDK, Playground |
+| **Microsoft Foundry features** | Model catalog, Model deployments (MaaS/MaaP), AI Inference SDK, Playground |
 
 **Learning Objectives:**
 - Deploy a model from the Azure AI model catalog
@@ -93,7 +93,7 @@ By the end of this hackathon, participants will be able to:
 | **Time** | 1 hour |
 | **Difficulty** | Beginner–Intermediate |
 | **Dependencies** | Challenge 01 |
-| **Azure AI Foundry features** | Playground (Chat), Prompt management, Content filtering configuration |
+| **Microsoft Foundry features** | Playground (Chat), Prompt management, Content filtering configuration |
 
 **Learning Objectives:**
 - Apply prompt engineering patterns (persona, few-shot, CoT, output schemas)
@@ -107,11 +107,11 @@ By the end of this hackathon, participants will be able to:
 ### Challenge 03: Prompt Flow Orchestration
 | Field | Detail |
 |-------|--------|
-| **Description** | Build a multi-step prompt flow that chains LLM calls with Python code nodes. Implement input validation, conditional logic, and structured output parsing. Test and iterate on the flow within AI Foundry. |
+| **Description** | Build a multi-step prompt flow that chains LLM calls with Python code nodes. Implement input validation, conditional logic, and structured output parsing. Test and iterate on the flow within Microsoft Foundry. |
 | **Time** | 1.5 hours |
 | **Difficulty** | Intermediate |
 | **Dependencies** | Challenge 02 |
-| **Azure AI Foundry features** | Prompt flow (visual editor + code), Flow variants, Connections, Batch testing |
+| **Microsoft Foundry features** | Prompt flow (visual editor + code), Flow variants, Connections, Batch testing |
 
 **Learning Objectives:**
 - Create a prompt flow with multiple LLM and Python nodes
@@ -129,11 +129,11 @@ By the end of this hackathon, participants will be able to:
 | **Time** | 1.5 hours |
 | **Difficulty** | Intermediate–Advanced |
 | **Dependencies** | Challenge 03 |
-| **Azure AI Foundry features** | Azure AI Search integration, Vector indexes, Data connections, On Your Data, Prompt flow RAG nodes |
+| **Microsoft Foundry features** | Azure AI Search integration, Vector indexes, Data connections, On Your Data, Prompt flow RAG nodes |
 
 **Learning Objectives:**
 - Create and populate a vector index in Azure AI Search
-- Connect the index to an AI Foundry project
+- Connect the index to a Microsoft Foundry project
 - Implement RAG using "On Your Data" in the Playground
 - Build a prompt flow with retrieval + generation nodes
 - Handle citation attribution and source grounding
@@ -143,14 +143,14 @@ By the end of this hackathon, participants will be able to:
 ### Challenge 05: Evaluation & Responsible AI
 | Field | Detail |
 |-------|--------|
-| **Description** | Evaluate your RAG application using AI Foundry's built-in evaluation framework. Measure groundedness, relevance, coherence, and safety. Identify failure modes and iterate on your solution. |
+| **Description** | Evaluate your RAG application using Microsoft Foundry's built-in evaluation framework. Measure groundedness, relevance, coherence, and safety. Identify failure modes and iterate on your solution. |
 | **Time** | 1 hour |
 | **Difficulty** | Intermediate–Advanced |
 | **Dependencies** | Challenge 04 |
-| **Azure AI Foundry features** | Evaluation framework, Built-in metrics (groundedness, relevance, coherence, fluency), Custom evaluators, Safety evaluations |
+| **Microsoft Foundry features** | Evaluation framework, Built-in metrics (groundedness, relevance, coherence, fluency), Custom evaluators, Safety evaluations |
 
 **Learning Objectives:**
-- Run evaluations using AI Foundry's evaluation framework
+- Run evaluations using Microsoft Foundry's evaluation framework
 - Interpret built-in quality metrics (groundedness, relevance, coherence)
 - Configure and run safety evaluations (harmful content, jailbreak)
 - Create a custom evaluator for domain-specific quality criteria
@@ -165,7 +165,7 @@ By the end of this hackathon, participants will be able to:
 | **Time** | 1 hour |
 | **Difficulty** | Advanced |
 | **Dependencies** | Challenge 05 |
-| **Azure AI Foundry features** | Managed online endpoints, Deployment configuration, API keys/auth, Monitoring |
+| **Microsoft Foundry features** | Managed online endpoints, Deployment configuration, API keys/auth, Monitoring |
 
 **Learning Objectives:**
 - Deploy a prompt flow to a managed online endpoint
@@ -343,7 +343,7 @@ ipykernel>=6.29.0
 ## 5. README.md Outline
 
 ```markdown
-# 🤖 Build Intelligent Apps with Azure AI Foundry
+# 🤖 Build Intelligent Apps with Microsoft Foundry
 > A What The Hack hackathon — from prompt to production
 
 ## What is this?
@@ -384,7 +384,7 @@ ipykernel>=6.29.0
 [Brief overview of folder layout]
 
 ## 📚 Resources
-[Links to Azure AI Foundry docs, learning paths, community]
+[Links to Microsoft Foundry docs, learning paths, community]
 
 ## 🤝 Contributing
 [How to contribute improvements]

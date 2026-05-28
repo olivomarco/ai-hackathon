@@ -1,7 +1,7 @@
-# Challenge 04: RAG — Retrieval-Augmented Generation
+# Challenge 04: RAG: Retrieval-Augmented Generation
 
 ## Introduction
-Large language models are powerful, but they do not automatically know your university’s current policies, deadlines, or support details. Without grounding, they may answer confidently with incomplete or invented information.
+Large language models can produce fluent, confident text, but they do not automatically know your university's current policies, deadlines, or support details. Without grounding, they may answer confidently with incomplete or invented information.
 
 **Retrieval-Augmented Generation (RAG)** improves this by retrieving relevant documents first and then asking the model to answer using that evidence. Think of it as giving your assistant a searchable university knowledge base before it speaks.
 
@@ -11,7 +11,7 @@ In this challenge, you will upgrade the **University Q&A Assistant** so it can a
 You will build a grounded Q&A experience that:
 
 1. Indexes the Northfield University FAQ documents in **Azure AI Search**
-2. Tests retrieval using **Use your data** in Azure AI Foundry
+2. Tests retrieval using **Use your data** in Microsoft Foundry
 3. Extends your Prompt Flow from Challenge 03 with a retrieval step
 4. Produces answers with source citations
 
@@ -27,7 +27,7 @@ Before moving on, verify:
 - your AI Foundry project can connect to it
 - the pricing tier matches the hackathon guidance
 
-### Step 2: Open “Add your data” in Azure AI Foundry
+### Step 2: Open "Add your data" in Microsoft Foundry
 Inside AI Foundry, navigate to the feature used to connect data for grounded chat experiences. Look for **Add your data** or the equivalent data connection workflow in your environment.
 
 The goal is to link documents, chunk them, and build an index the assistant can search.
@@ -95,8 +95,8 @@ You do not need a perfect enterprise architecture. A clear, working retrieval-to
 ### Step 8: Compare answers with and without RAG
 Take at least three questions and compare the assistant’s answer:
 
-- **without RAG** — using your earlier flow or playground prompt
-- **with RAG** — using retrieved FAQ content
+- **without RAG**: using your earlier flow or playground prompt
+- **with RAG**: using retrieved FAQ content
 
 Document what improved. Focus on specificity, groundedness, and citation quality.
 
@@ -115,10 +115,10 @@ challenges/challenge-04-rag/rag-flow.dag.yaml
 - [ ] RAG vs non-RAG comparison documented
 
 ## Learning Resources
-- [Retrieval-augmented generation (RAG) in Azure AI Foundry](https://learn.microsoft.com/azure/ai-foundry/concepts/retrieval-augmented-generation)
+- [Retrieval-augmented generation (RAG) in Microsoft Foundry](https://learn.microsoft.com/azure/ai-foundry/concepts/retrieval-augmented-generation)
 - [Azure AI Search overview](https://learn.microsoft.com/azure/search/search-what-is-azure-search)
-- [Use your data in Azure AI Foundry](https://learn.microsoft.com/azure/ai-foundry/how-to/connections-add-data)
-- [Grounded generation patterns with Azure AI Search](https://learn.microsoft.com/training/paths/develop-generative-ai-solutions-azure-ai-foundry/)
+- [RAG quickstart with Azure AI Search](https://learn.microsoft.com/azure/search/search-get-started-rag)
+- [Develop generative AI apps on Microsoft Foundry](https://learn.microsoft.com/training/paths/develop-generative-ai-apps/)
 
 ## Tips
 - **Chunk size trade-offs**: larger chunks preserve context, smaller chunks can improve retrieval precision.

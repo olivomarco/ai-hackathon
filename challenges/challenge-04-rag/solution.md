@@ -1,4 +1,4 @@
-# Challenge 04: RAG — Coach's Guide
+# Challenge 04: RAG: Coach's Guide
 
 ## Overview
 This challenge is where the University Q&A Assistant becomes meaningfully grounded. Students should understand the core architecture: retrieve relevant content first, then generate an answer that uses the retrieved evidence.

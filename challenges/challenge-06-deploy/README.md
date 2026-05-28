@@ -1,7 +1,7 @@
 # Challenge 06: Deploy & Integrate
 
 ## Introduction
-A good prototype is not the finish line. Real AI applications need a deployment target, an interface, and a way for users to interact with the system outside the studio.
+A good prototype is not the finish line. Real AI applications need a deployment target and a way for users to interact with the system outside the studio.
 
 In this final challenge, you will take the **University Q&A Assistant** you built and improved in earlier challenges and move it toward a production-style setup. You will deploy it as a **managed online endpoint** and connect it to a simple Python web app.
 
@@ -9,11 +9,11 @@ In this final challenge, you will take the **University Q&A Assistant** you buil
 You will:
 
 1. Package your Prompt Flow as a deployable application
-2. Deploy it to a **Managed Online Endpoint** in Azure AI Foundry
+2. Deploy it to a **Managed Online Endpoint** in Microsoft Foundry
 3. Test the endpoint with a REST call
 4. Build a simple **Flask** web app that sends student questions to the endpoint and shows responses with citations
 
-This challenge turns the project into a working end-to-end demo teams can showcase.
+This challenge turns the project into a working end-to-end demo teams can present.
 
 ## Step-by-step
 ### Step 1: Package the Prompt Flow
@@ -29,7 +29,7 @@ Before deploying, confirm:
 Think of this as the version you would be comfortable showing to a real stakeholder.
 
 ### Step 2: Deploy to a Managed Online Endpoint
-In Azure AI Foundry, deploy the flow to a **Managed Online Endpoint**.
+In Microsoft Foundry, deploy the flow to a **Managed Online Endpoint**.
 
 As you configure deployment, pay attention to:
 
@@ -159,7 +159,7 @@ This is optional, but it is a strong final demo because it shows both the AI end
 - [ ] Bonus: Flask app deployed to Azure App Service or Container Apps
 
 ## Learning Resources
-- [Deploy flows and apps in Azure AI Foundry](https://learn.microsoft.com/azure/ai-foundry/how-to/deploy-flow)
+- [Deploy a flow as a managed online endpoint](https://learn.microsoft.com/azure/ai-foundry/how-to/flow-deploy)
 - [Managed online endpoints overview](https://learn.microsoft.com/azure/machine-learning/concept-endpoints-online)
 - [Flask quickstart](https://flask.palletsprojects.com/en/stable/quickstart/)
 - [Requests: HTTP for Humans](https://requests.readthedocs.io/en/latest/)

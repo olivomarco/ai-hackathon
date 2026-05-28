@@ -1,12 +1,12 @@
 ---
-title: "Challenge 04: RAG — Grounding with Your Data"
+title: "Challenge 04: RAG: Grounding with Your Data"
 parent: Challenges
 nav_order: 5
 ---
 
 <div class="hero-panel challenge-hero">
   <span class="hero-kicker">Challenge 04 • Grounded answers</span>
-  <h1>RAG — Grounding with Your Data</h1>
+  <h1>RAG: Grounding with Your Data</h1>
   <p class="hero-tagline">This is where the assistant stops guessing from general training alone. Participants add retrieval so answers can be rooted in real documents, cited sources, and searchable knowledge instead of model memory.</p>
   <div class="meta-strip">
     <span class="meta-badge">⏱️ 1.5 hr</span>
@@ -41,23 +41,23 @@ That architecture matters for trust. In this challenge, teams extend the **Unive
 ## Key concepts
 
 <div class="callout-info" markdown="1">
-- **RAG** — a pattern that retrieves supporting content before generation so the model answers from evidence.
-- **Azure AI Search** — the retrieval engine used to store, index, and query your document collection.
-- **Embeddings** — vector representations that capture semantic meaning for similarity search.
-- **Chunking** — splitting long documents into smaller passages that are easier to index and retrieve well.
-- **Grounded answers** — responses that stay anchored to retrieved source material.
-- **Citations** — source references that help users verify where an answer came from.
+- **RAG**: a pattern that retrieves supporting content before generation so the model answers from evidence.
+- **Azure AI Search**: the retrieval engine used to store, index, and query your document collection.
+- **Embeddings**: vector representations that capture semantic meaning for similarity search.
+- **Chunking**: splitting long documents into smaller passages that are easier to index and retrieve well.
+- **Grounded answers**: responses that stay anchored to retrieved source material.
+- **Citations**: source references that help users verify where an answer came from.
 </div>
 
 ## Learn before you build
 
-- [Retrieval-augmented generation (RAG) in Microsoft Foundry](https://learn.microsoft.com/azure/ai-foundry/concepts/retrieval-augmented-generation) — end-to-end architecture overview.
-- [Azure AI Search overview](https://learn.microsoft.com/azure/search/search-what-is-azure-search) — retrieval service fundamentals.
-- [RAG quickstart with Azure AI Search](https://learn.microsoft.com/azure/search/search-get-started-rag) — grounded chat and data-connection workflow.
-- [Develop generative AI apps on Microsoft Foundry](https://learn.microsoft.com/training/paths/develop-generative-ai-apps/) — broader Learn path that includes retrieval patterns.
+- [Retrieval-augmented generation (RAG) in Microsoft Foundry](https://learn.microsoft.com/azure/ai-foundry/concepts/retrieval-augmented-generation): end-to-end architecture overview.
+- [Azure AI Search overview](https://learn.microsoft.com/azure/search/search-what-is-azure-search): retrieval service fundamentals.
+- [RAG quickstart with Azure AI Search](https://learn.microsoft.com/azure/search/search-get-started-rag): grounded chat and data-connection workflow.
+- [Develop generative AI apps on Microsoft Foundry](https://learn.microsoft.com/training/paths/develop-generative-ai-apps/): broader Learn path that includes retrieval patterns.
 
 <div class="callout-tip" markdown="1">
-Ready to ground the assistant on real data? **Open the full challenge guide on GitHub:** [challenges/challenge-04-rag](https://github.com/olivomarco/ai-hackathon/tree/main/challenges/challenge-04-rag) — or open the repository in Codespaces (badge above) and follow the README in `challenges/challenge-04-rag/`.
+Ready to ground the assistant on real data? **Open the full challenge guide on GitHub:** [challenges/challenge-04-rag](https://github.com/olivomarco/ai-hackathon/tree/main/challenges/challenge-04-rag), or open the repository in Codespaces (badge above) and follow the README in `challenges/challenge-04-rag/`.
 </div>
 
 <nav class="page-nav">

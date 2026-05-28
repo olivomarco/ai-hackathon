@@ -41,23 +41,23 @@ Participants use built-in metrics such as **groundedness**, **relevance**, **coh
 ## Key concepts
 
 <div class="callout-info" markdown="1">
-- **Groundedness** — whether the answer is supported by the retrieved or provided source material.
-- **Relevance** — how directly the response addresses the user’s question or task.
-- **Coherence** — whether the answer is logically organized and easy to follow.
-- **Fluency** — whether the writing is natural, clear, and well-formed.
-- **Content safety** — testing for harmful, disallowed, or policy-violating inputs and outputs.
-- **LLM-as-judge** — using model-based evaluators to score or compare outputs at scale.
+- **Groundedness**: whether the answer is supported by the retrieved or provided source material.
+- **Relevance**: how directly the response addresses the user's question or task.
+- **Coherence**: whether the answer is logically organized and easy to follow.
+- **Fluency**: whether the writing is natural, clear, and well-formed.
+- **Content safety**: testing for harmful, disallowed, or policy-violating inputs and outputs.
+- **LLM-as-judge**: using model-based evaluators to score or compare outputs at scale.
 </div>
 
 ## Learn before you build
 
-- [Azure AI evaluation metrics reference](https://learn.microsoft.com/azure/ai-foundry/concepts/evaluation-metrics-built-in) — package overview and evaluator framing.
-- [Evaluate generative AI apps in Microsoft Foundry](https://learn.microsoft.com/azure/ai-foundry/how-to/evaluate-generative-ai-app) — practical evaluation workflow.
-- [Responsible AI guidance for Azure AI](https://learn.microsoft.com/azure/ai-foundry/responsible-use-of-ai-overview) — safety and governance perspective.
-- [Azure AI Content Safety overview](https://learn.microsoft.com/azure/ai-services/content-safety/overview) — moderation and safety capabilities.
+- [Azure AI evaluation metrics reference](https://learn.microsoft.com/azure/ai-foundry/concepts/evaluation-metrics-built-in): package overview and evaluator framing.
+- [Evaluate generative AI apps in Microsoft Foundry](https://learn.microsoft.com/azure/ai-foundry/how-to/evaluate-generative-ai-app): practical evaluation workflow.
+- [Responsible AI guidance for Azure AI](https://learn.microsoft.com/azure/ai-foundry/responsible-use-of-ai-overview): safety and governance perspective.
+- [Azure AI Content Safety overview](https://learn.microsoft.com/azure/ai-services/content-safety/overview): moderation and safety capabilities.
 
 <div class="callout-tip" markdown="1">
-Ready to measure quality and safety? **Open the full challenge guide on GitHub:** [challenges/challenge-05-evaluation](https://github.com/olivomarco/ai-hackathon/tree/main/challenges/challenge-05-evaluation) — or open the repository in Codespaces (badge above) and follow the README in `challenges/challenge-05-evaluation/`.
+Ready to measure quality and safety? **Open the full challenge guide on GitHub:** [challenges/challenge-05-evaluation](https://github.com/olivomarco/ai-hackathon/tree/main/challenges/challenge-05-evaluation), or open the repository in Codespaces (badge above) and follow the README in `challenges/challenge-05-evaluation/`.
 </div>
 
 <nav class="page-nav">

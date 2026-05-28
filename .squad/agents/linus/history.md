@@ -15,8 +15,10 @@
 - The participant-facing site works best as a fast, searchable front door: a strong home hero, a plain-language setup guide, challenge stubs for navigation, and a coach-only boundary that keeps solutions out of Pages.
 - For local verification, `bundle exec jekyll build -d .site-check` in `docs/` is enough to validate navigation, Markdown rendering, and custom styling before deployment.
 
-### 2026-05-28T16:23:27.374+01:00 — Wave 2 challenge page learnings
-- Participant-facing challenge pages work best as orientation pages, not duplicated lab manuals: a short overview, build outcome, concepts, and links are enough to keep event-day navigation fast.
-- Reusing a single visual pattern across all challenge pages makes the seven-step progression feel intentional and easier to scan on GitHub Pages.
-- A dedicated resources page reduces sidebar hunting and gives students one stable reference shelf for Foundry docs, SDK docs, RAG references, and evaluation guidance.
+### 2026-05-28T20:15:00+01:00 — GitHub Pages CSS fix (root-cause investigation)
+- JTD theme requires `docs/assets/css/just-the-docs-default.scss` with Liquid front-matter (`---\n---`) as the stylesheet entry point. Without it Jekyll never compiles the theme CSS, and the layout renders as a naked HTML fragment.
+- JTD also requires the `jekyll-include-cache` plugin; its layouts use `{% include_cached %}` which errors silently without the plugin, further breaking layout application.
+- `_config.yml` `url` must match the actual GitHub Pages domain (`olivomarco.github.io`, not `microsoft.github.io`) — a mismatched domain causes asset resolution failures even if CSS compiles.
+- Always verify `aux_links` and `nav_external_links` point to the correct org/repo after a repo fork or rename — these URLs are easy to miss and affect all site-level links.
+- The upstream `just-the-docs-default.scss` on `main` uses Liquid `{% include css/just-the-docs.scss.liquid %}`, not a plain `@import` — fetch the actual upstream file to confirm format before creating it.
 

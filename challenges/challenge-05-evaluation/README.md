@@ -1,17 +1,17 @@
 # Challenge 05: Evaluation & Responsible AI
 
 ## Introduction
-Building an AI system is not just about getting one good answer. You also need to know how consistently it performs, where it fails, and whether it behaves responsibly under pressure.
+Releasing an AI system means more than getting one good answer in testing. You also need to know how consistently it performs, where it fails, and whether it behaves responsibly under pressure.
 
-This challenge shifts your mindset from **“Does it work?”** to **“How well does it work, and how do we know?”** Using the University Q&A Assistant you built in earlier challenges, you will run structured evaluations in Azure AI Foundry and make one evidence-based improvement.
+This challenge shifts your mindset from **“Does it work?”** to **“How well does it work, and how do we know?”** Using the University Q&A Assistant you built in earlier challenges, you will run structured evaluations in Microsoft Foundry and make one evidence-based improvement.
 
 ## What you'll build
 You will create an evaluation workflow for the **RAG-based University Q&A Assistant** that measures:
 
-- **Groundedness** — does the answer stay supported by the retrieved context?
-- **Relevance** — does it answer the actual user question?
-- **Coherence** — is it logically organized and internally consistent?
-- **Fluency** — is it easy to read and well phrased?
+- **Groundedness**: does the answer stay supported by the retrieved context?
+- **Relevance**: does it answer the actual user question?
+- **Coherence**: is it logically organized and internally consistent?
+- **Fluency**: is it easy to read and well phrased?
 
 You will also run a small **content safety check** with adversarial prompts and document what happened.
 
@@ -75,8 +75,8 @@ Run the evaluators on the University Q&A Assistant from Challenge 04.
 
 Do not assume good scores just because the app feels useful in a few manual tests. The point is to measure patterns across multiple examples.
 
-### Step 5: Review results in the AI Foundry Evaluation dashboard
-Open the Evaluation dashboard in AI Foundry and inspect your results.
+### Step 5: Review results in the Microsoft Foundry Evaluation dashboard
+Open the Evaluation dashboard in Microsoft Foundry and inspect your results.
 
 Look for:
 
@@ -137,8 +137,8 @@ Capture whether filtering, refusal, redirection, or fallback behavior worked as 
 - [ ] Content safety test completed
 
 ## Learning Resources
-- [Azure AI evaluation concepts](https://learn.microsoft.com/azure/ai-foundry/concepts/evaluation)
-- [Evaluate generative AI apps in Azure AI Foundry](https://learn.microsoft.com/azure/ai-foundry/how-to/evaluate-generative-ai-app)
+- [Azure AI evaluation metrics reference](https://learn.microsoft.com/azure/ai-foundry/concepts/evaluation-metrics-built-in)
+- [Evaluate generative AI apps in Microsoft Foundry](https://learn.microsoft.com/azure/ai-foundry/how-to/evaluate-generative-ai-app)
 - [Responsible AI guidance for Azure AI](https://learn.microsoft.com/azure/ai-foundry/responsible-use-of-ai-overview)
 - [Azure AI Content Safety overview](https://learn.microsoft.com/azure/ai-services/content-safety/overview)
 

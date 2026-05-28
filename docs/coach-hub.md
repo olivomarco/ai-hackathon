@@ -1,12 +1,12 @@
 ---
-title: 🧑‍🏫 Coach Hub
+title: Coach Hub
 nav_order: 5
 has_children: false
 ---
 
-# Welcome, Coach
+# Coach Hub
 
-Your job is to create momentum, not to become the team’s keyboard. In What The Hack, great coaching means helping participants frame the problem, notice signals sooner, and keep moving through uncertainty with confidence.
+Your job is to create momentum, not to become the team's keyboard. In What The Hack, great coaching means asking better questions rather than giving faster answers.
 
 Coaches for this event should focus on facilitation, pacing, and unblock strategy. Student-facing challenge pages stay public; full solution guides remain in the repository so you can use them selectively when a team is truly stuck.
 

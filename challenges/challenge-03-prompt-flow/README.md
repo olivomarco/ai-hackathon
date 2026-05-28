@@ -1,9 +1,11 @@
-# Challenge 03: Prompt Flow — Multi-step LLM Orchestration
+# Challenge 03: Prompt Flow: Multi-step LLM Orchestration
 
 ## Introduction
 Single prompts are useful, but real AI apps usually need more than one step. They may classify a question, choose the right handling path, call a model with specialized instructions, and then shape the final answer for the user.
 
-In Azure AI Foundry, **Prompt Flow** helps you design that orchestration visually and test it as a repeatable workflow. In this challenge, you will evolve your **University Q&A Assistant** from a single-prompt prototype into a multi-step system that can route different kinds of student questions more intentionally.
+In Microsoft Foundry, **Prompt Flow** helps you design that orchestration visually and test it as a repeatable workflow. In this challenge, you will evolve your **University Q&A Assistant** from a single-prompt prototype into a multi-step system that can route different kinds of student questions more intentionally.
+
+> **📌 Note on Prompt Flow status:** Prompt Flow is in sustaining mode. Microsoft is steering new work toward the **Foundry Agent Service** (via `azure-ai-projects` 2.x). Feature development has concluded; the tooling remains fully functional for existing workflows and is the right fit for this hackathon challenge. The orchestration patterns you learn here transfer directly to Agent Service flows. See [Foundry Agent Service](https://learn.microsoft.com/azure/ai-foundry/concepts/agents) for the forward-looking path.
 
 ## What you'll build
 You will create a **Standard Prompt Flow** for the University Q&A Assistant that:
@@ -15,15 +17,15 @@ You will create a **Standard Prompt Flow** for the University Q&A Assistant that
 By the end, your assistant should feel less generic than the version from Challenge 02 because it will use different instructions for different question types.
 
 ## Step-by-step
-### Step 1: Open Prompt Flow in Azure AI Foundry
-In your Azure AI Foundry project, open **Prompt Flow** and create a new **Standard Flow**.
+### Step 1: Open Prompt Flow in Microsoft Foundry
+In your Microsoft Foundry project, open **Prompt Flow** and create a new **Standard Flow**.
 
 Give it a clear name such as `university-qa-routing-flow`. Standard flows are a good fit here because you want a directed, multi-step workflow with explicit inputs and outputs.
 
 ### Step 2: Define your flow input
 Create a flow input such as:
 
-- `question` — the student’s question as text
+- `question`: the student's question as text
 
 Keep the first version simple. You can add more fields later, such as locale, user role, or conversation history.
 
@@ -135,10 +137,11 @@ Treat the YAML as part of your project artifact. It makes the flow easier to rev
 - [ ] Flow YAML saved to `challenges/challenge-03-prompt-flow/flow.dag.yaml`
 
 ## Learning Resources
-- [Azure AI Foundry Prompt Flow overview](https://learn.microsoft.com/azure/ai-foundry/how-to/prompt-flow)
-- [Develop flows in Azure AI Foundry](https://learn.microsoft.com/azure/ai-foundry/how-to/flow-develop)
-- [Prompt engineering concepts in Azure AI Foundry](https://learn.microsoft.com/azure/ai-foundry/concepts/prompt-engineering)
-- [Designing reliable AI applications with orchestration patterns](https://learn.microsoft.com/training/paths/develop-generative-ai-solutions-azure-ai-foundry/)
+- [Microsoft Foundry Prompt Flow overview](https://learn.microsoft.com/azure/ai-foundry/how-to/prompt-flow)
+- [Develop flows in Microsoft Foundry](https://learn.microsoft.com/azure/ai-foundry/how-to/flow-develop)
+- [Prompt engineering concepts](https://learn.microsoft.com/azure/ai-services/openai/concepts/prompt-engineering)
+- [Foundry Agent Service (forward-looking orchestration path)](https://learn.microsoft.com/azure/ai-foundry/concepts/agents)
+- [Develop generative AI apps on Microsoft Foundry](https://learn.microsoft.com/training/paths/develop-generative-ai-apps/)
 
 ## Tips
 - **DAG vs Standard Flow**: for this challenge, focus on a Standard Flow that makes the multi-step path easy to inspect.

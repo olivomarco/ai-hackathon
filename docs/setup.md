@@ -12,7 +12,7 @@ Use this page to get your environment ready before Challenge 00. The fastest rou
 - A GitHub account with access to Codespaces or permission to clone the repo locally
 - An Azure subscription through Azure Pass, Azure for Students, or a trial/subscription provided by your event
 - Basic Python familiarity: running scripts, installing packages, and reading terminal output
-- A modern browser and a stable internet connection for Azure AI Foundry
+- A modern browser and a stable internet connection for Microsoft Foundry
 
 ## Choose your setup path
 
@@ -26,7 +26,7 @@ Best for most participants. You get a ready-to-use cloud dev environment with th
 4. Open the integrated terminal when VS Code loads.
 5. Continue with Azure sign-in and Challenge 00.
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/microsoft/ai-hackathon)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/olivomarco/ai-hackathon)
 
 <div class="callout-tip">
 <strong>Tip:</strong> Codespaces is the safest event-day option because everyone works in the same environment, with fewer laptop-specific issues to debug.
@@ -74,8 +74,8 @@ az login
 az account set --subscription "<your-subscription-name-or-id>"
 ```
 
-5. Confirm you can open Azure AI Foundry in the browser and reach the correct tenant.
-6. Move to Challenge 00 to provision the hub and project.
+5. Confirm you can open Microsoft Foundry in the browser and reach the correct tenant.
+6. Move to Challenge 00 to provision the Foundry resource and project.
 
 ## Azure subscription options
 

@@ -1,4 +1,4 @@
-# Challenge 02: Prompt Engineering & System Design — Coach's Guide
+# Challenge 02: Prompt Engineering & System Design: Coach's Guide
 
 ## Overview
 Students should learn that prompt engineering is structured design work, not magic wording. A strong result will define persona, scope, tone, and fallback behavior, then validate those choices against realistic and adversarial user questions.
@@ -16,7 +16,7 @@ The target use case is a **University Q&A Assistant**, which prepares teams for 
    - uncertainty handling
    - off-topic behavior
 5. Have them test at least five queries, including off-topic and unsafe scenarios.
-6. Review content safety settings and capture at least two observations.
+6. Review content safety settings in Microsoft Foundry and capture at least two observations.
 7. Save the final prompt in `challenges/challenge-02-prompt-engineering/system-prompt.txt`.
 
 A strong final prompt should feel reusable, not overfit to one exact example.

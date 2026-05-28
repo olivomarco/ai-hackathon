@@ -10,13 +10,13 @@ You will experiment in the Chat Playground, observe how prompt changes affect ou
 
 ## Step-by-step
 ### Four prompt engineering patterns to explore
-1. **Persona setting** — give the model a role, audience, and voice
-2. **Few-shot examples** — show example inputs and outputs
-3. **Chain-of-thought** — ask the model to reason step by step
-4. **Output format control** — request JSON, bullets, or other constrained structures
+1. **Persona setting**: give the model a role, audience, and voice
+2. **Few-shot examples**: show example inputs and outputs
+3. **Chain-of-thought**: ask the model to reason step by step
+4. **Output format control**: request JSON, bullets, or other constrained structures
 
 ### Step 1: Open the Playground
-In Azure AI Foundry, open the **Chat Playground** and choose a model deployment from Challenge 01.
+In Microsoft Foundry, open the **Chat Playground** and choose a model deployment from Challenge 01.
 
 ### Step 2: Start with a baseline system prompt
 Begin with a simple prompt such as:
@@ -96,10 +96,10 @@ Keep it clean and reusable so your team can reference it in later challenges.
 - [ ] Documented 2+ content filter observations
 
 ## Learning Resources
-- [Prompt engineering concepts in Azure AI Foundry](https://learn.microsoft.com/azure/ai-foundry/concepts/prompt-engineering)
-- [Azure AI Foundry playgrounds](https://learn.microsoft.com/azure/ai-foundry/how-to/playgrounds)
+- [Prompt engineering concepts](https://learn.microsoft.com/azure/ai-services/openai/concepts/prompt-engineering)
+- [Microsoft Foundry playgrounds](https://learn.microsoft.com/azure/ai-foundry/concepts/concept-playgrounds)
 - [Azure AI Content Safety overview](https://learn.microsoft.com/azure/ai-services/content-safety/overview)
-- [Develop generative AI solutions with Azure AI Foundry](https://learn.microsoft.com/training/paths/develop-generative-ai-solutions-azure-ai-foundry/)
+- [Develop generative AI apps on Microsoft Foundry](https://learn.microsoft.com/training/paths/develop-generative-ai-apps/)
 
 ## Tips
 - Change one thing at a time so you can tell what actually improved the response.
