@@ -28,7 +28,7 @@ Best for most participants. You get a ready-to-use cloud dev environment with th
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/olivomarco/ai-hackathon)
 
-<div class="callout-tip">
+<div class="callout-tip" markdown="1">
 <strong>Tip:</strong> Codespaces is the safest event-day option because everyone works in the same environment, with fewer laptop-specific issues to debug.
 </div>
 
@@ -54,7 +54,7 @@ Choose this only if you cannot use containers.
 5. Install the project requirements from `requirements.txt`.
 6. Use the same challenge guides as container users after environment validation passes.
 
-<div class="callout-warning">
+<div class="callout-warning" markdown="1">
 <strong>Warning:</strong> Manual setup is more sensitive to local machine differences. If you hit package or CLI issues, ask a coach early instead of losing time during Challenge 00.
 </div>
 
@@ -95,7 +95,7 @@ python resources/scripts/validate-environment.py
 
 A successful run should confirm your local tooling, Python environment, and Azure connectivity are ready for Challenge 00.
 
-<div class="callout-info">
+<div class="callout-info" markdown="1">
 <strong>Heads up:</strong> If the validation script reports missing environment variables, copy `.env.example` to `.env` and fill in the values provided for your event before retrying.
 </div>
 

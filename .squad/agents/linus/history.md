@@ -83,3 +83,25 @@
 - Staged and committed `.squad/` files to main with chore message
 
 **Status:** Session archived. All decisions, logs, and orchestration records persisted.
+
+---
+
+## Team Update — 2026-05-28T21:22:00+01:00 — Jekyll Kramdown markdown="1" fix
+
+**Session:** Fix broken markdown rendering inside HTML block elements
+
+**Root cause confirmed:** Jekyll's Kramdown processor does NOT process markdown content (tables, lists, links, emphasis) inside HTML block-level elements unless the wrapping element carries the `markdown="1"` attribute. Marco screenshotted the broken "Per-challenge coach notes" table in coach-hub.md rendering as raw pipe characters instead of HTML.
+
+**Changes made (4 edits):**
+- `docs/coach-hub.md:80` — `<div class="challenge-card">` → `<div class="challenge-card" markdown="1">` (fixes the broken table)
+- `docs/setup.md:31` — `<div class="callout-tip">` → `<div class="callout-tip" markdown="1">` (fixes link rendering in Codespaces tip)
+- `docs/setup.md:57` — `<div class="callout-warning">` → `<div class="callout-warning" markdown="1">` (fixes link rendering in manual setup warning)
+- `docs/setup.md:98` — `<div class="callout-info">` → `<div class="callout-info" markdown="1">` (fixes code and emphasis in validation tip)
+
+**Verification:** `grep -rn '<div class=' docs/ --include="*.md" | grep -v 'markdown="1"' | grep -v 'hero-panel\|quick-grid\|quick-card\|meta-strip\|cta-row\|table-wrapper'` returns zero lines (no broken divs remain).
+
+**Style rule (new):** Every `<div class="callout-*">` or `<div class="challenge-card">` that wraps markdown body content MUST include the `markdown="1"` attribute. Exception: hero-panel, quick-grid, quick-card, meta-strip, cta-row, table-wrapper (no markdown inside).
+
+**Decision record:** `.squad/decisions/inbox/linus-markdown-attr-callouts.md`
+
+**Deployed:** Committed and pushed to `main`; Pages workflow triggered.

@@ -77,7 +77,7 @@ Call out good debugging, clear prompt design, and smart teamwork. Teams gain ene
 
 Each challenge has a coach-only reference page with the expected solution path, common blockers, and timing tips. These pages are hidden from the main navigation so students do not stumble into them.
 
-<div class="challenge-card">
+<div class="challenge-card" markdown="1">
 
 | Challenge | Coach view |
 | --- | --- |
