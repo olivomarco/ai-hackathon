@@ -10,7 +10,7 @@ description: Kick off the What The Hack experience and navigate the seven Micros
   <p class="hero-tagline">From prompt to production: seven challenges that take you through model deployment, orchestration, grounding, and evaluation in one day.</p>
   <div class="cta-row">
     <a class="btn btn-primary" href="{{ '/setup' | relative_url }}">Get Started</a>
-    <a class="btn" href="{{ '/coach-hub' | relative_url }}">Coaches: Start here</a>
+    <a class="btn btn-outline" href="{{ '/coach-hub' | relative_url }}">Coaches: Start here</a>
   </div>
 </div>
 
@@ -64,4 +64,4 @@ This site is built to help you pace teams, spot common blockers early, and keep 
 ## Start with the right path
 
 <a class="btn btn-primary btn-lg" href="{{ '/setup' | relative_url }}">Get Started</a>
-<a class="btn btn-lg" href="{{ '/coach-hub' | relative_url }}">Coaches: Start here</a>
+<a class="btn btn-outline btn-lg" href="{{ '/coach-hub' | relative_url }}">Coaches: Start here</a>

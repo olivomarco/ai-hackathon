@@ -105,3 +105,21 @@
 **Decision record:** `.squad/decisions/inbox/linus-markdown-attr-callouts.md`
 
 **Deployed:** Committed and pushed to `main`; Pages workflow triggered.
+
+---
+
+## Team Update — 2026-05-28T21:30:00+01:00 — Hero panel secondary button contrast fix
+
+**Session:** Fix invisible secondary CTA in homepage hero
+
+**Root cause confirmed:** `.hero-panel` sets `color: #fff` (white text) that cascades to child elements. The secondary "Coaches: Start here" buttons at lines 13 and 67 of `docs/index.md` used plain `.btn` class which JTD renders with a near-white background — resulting in white text on white background, invisible to users.
+
+**Changes made (two-layer fix):**
+- `docs/_sass/custom/custom.scss` — added `.hero-panel .btn:not(.btn-primary):not(.btn-purple)` scoped CSS rule setting `color: #1f2937` (dark gray) and `background: rgba(255, 255, 255, 0.92)` with hover enhancement
+- `docs/index.md:13` — `<a class="btn" ...>` → `<a class="btn btn-outline" ...>` (adds JTD's outlined-button pattern for secondary CTAs on dark backgrounds)
+- `docs/index.md:67` — `<a class="btn btn-lg" ...>` → `<a class="btn btn-outline btn-lg" ...>` (same fix, large variant)
+- `.squad/decisions/inbox/linus-hero-btn-contrast.md` — full decision record written
+
+**Forward guidance:** ALL secondary/plain `.btn` elements placed inside a `.hero-panel` must use the `btn-outline` class to ensure readability and consistent UX (outlined style signals secondary action). If a new button is added to `.hero-panel`, pair it with `btn-outline` automatically.
+
+**Deployed:** Committed and pushed to `main`; Pages workflow triggered.

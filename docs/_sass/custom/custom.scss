@@ -173,6 +173,18 @@ body {
   margin-top: 1.5rem;
 }
 
+/* Secondary CTA button inside dark hero panels */
+.hero-panel .btn:not(.btn-primary):not(.btn-purple) {
+  color: #1f2937;
+  background: rgba(255, 255, 255, 0.92);
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+.hero-panel .btn:not(.btn-primary):not(.btn-purple):hover {
+  background: rgba(255, 255, 255, 1);
+  color: #111827;
+}
+
 .coach-note {
   font-size: 0.96rem;
   color: var(--ink-soft);
