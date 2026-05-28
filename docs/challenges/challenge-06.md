@@ -50,13 +50,13 @@ This is also where production thinking starts to matter. Teams are now packaging
 
 ## Learn before you build
 
-- [Deploy flows and apps in Azure AI Foundry](https://learn.microsoft.com/azure/ai-foundry/how-to/deploy-flow) — deployment entry point for the hackathon flow.
+- [Deploy a flow as a managed online endpoint](https://learn.microsoft.com/azure/ai-foundry/how-to/flow-deploy) — deployment entry point for the hackathon flow.
 - [Managed online endpoints overview](https://learn.microsoft.com/azure/machine-learning/concept-endpoints-online) — Azure-hosted real-time deployment guidance.
 - [Flask quickstart](https://flask.palletsprojects.com/en/stable/quickstart/) — lightweight path for the local integration app.
 - [Requests: HTTP for Humans](https://requests.readthedocs.io/en/latest/) — REST request patterns and response handling.
 
 <div class="callout-tip" markdown="1">
-Ready to ship the experience into an app? [📋 Open Challenge Guide](../../challenges/challenge-06-deploy/README.md)
+Ready to ship the experience into an app? **Open the full challenge guide on GitHub:** [challenges/challenge-06-deploy](https://github.com/olivomarco/ai-hackathon/tree/main/challenges/challenge-06-deploy) — or open the repository in Codespaces (badge above) and follow the README in `challenges/challenge-06-deploy/`.
 </div>
 
 <nav class="page-nav">

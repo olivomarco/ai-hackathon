@@ -45,19 +45,20 @@ This page also introduces the useful distinction between **Models-as-a-Service (
 - **MaaS** — a faster, service-style deployment path where Microsoft manages the serving layer for you.
 - **MaaP** — a more platform-shaped deployment model with more control over how the model runs in your Azure environment.
 - **Playground** — the fastest place to test prompts, tune behavior, and inspect output before writing application code.
-- **`azure-ai-inference` SDK** — the Python client library for chat completions, embeddings, and inference requests against supported endpoints.
-- **Endpoint** — the URL your script or app calls to send prompts and receive model output.
+- **`azure-ai-projects` SDK** — the primary Python client library for Microsoft Foundry; use `AIProjectClient` + `.get_openai_client()` to reach deployed models via the Responses API. (The `azure-ai-inference` `ChatCompletionsClient` remains available for inference-only scenarios but `azure-ai-projects` is the recommended path.)
+- **Endpoint** — the project endpoint URL your script or app uses to connect to all Foundry resources.
 </div>
 
 ## Learn before you build
 
-- [Deploy models in Azure AI Foundry](https://learn.microsoft.com/azure/ai-foundry/how-to/deploy-models-openai) — deployment concepts and portal flow.
+- [Deploy models in Microsoft Foundry](https://learn.microsoft.com/azure/ai-foundry/how-to/deploy-models-openai) — deployment concepts and portal flow.
 - [Model catalog overview](https://learn.microsoft.com/azure/ai-foundry/how-to/model-catalog-overview) — compare model families and deployment paths.
-- [Azure AI Inference SDK for Python](https://learn.microsoft.com/python/api/overview/azure/ai-inference-readme) — official package guide and samples.
-- [Use playgrounds in Azure AI Foundry](https://learn.microsoft.com/azure/ai-foundry/how-to/playgrounds) — quick path for interactive testing.
+- [Azure AI Projects SDK for Python](https://learn.microsoft.com/python/api/overview/azure/ai-projects-readme) — primary SDK for Microsoft Foundry; covers `AIProjectClient` and `get_openai_client()`.
+- [Azure AI Inference SDK for Python](https://learn.microsoft.com/python/api/overview/azure/ai-inference-readme) — inference-only client (still supported, still beta).
+- [Use playgrounds in Microsoft Foundry](https://learn.microsoft.com/azure/ai-foundry/quickstarts/get-started-playground) — quick path for interactive testing.
 
 <div class="callout-tip" markdown="1">
-Ready to deploy and call your first model? [📋 Open Challenge Guide](../../challenges/challenge-01-first-model/README.md)
+Ready to deploy and call your first model? **Open the full challenge guide on GitHub:** [challenges/challenge-01-first-model](https://github.com/olivomarco/ai-hackathon/tree/main/challenges/challenge-01-first-model) — or open the repository in Codespaces (badge above) and follow the README in `challenges/challenge-01-first-model/`.
 </div>
 
 <nav class="page-nav">

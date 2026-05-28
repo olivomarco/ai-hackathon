@@ -50,13 +50,13 @@ Participants explore four practical patterns—**persona**, **few-shot examples*
 
 ## Learn before you build
 
-- [Prompt engineering concepts in Azure AI Foundry](https://learn.microsoft.com/azure/ai-foundry/concepts/prompt-engineering) — clear guidance on prompt structure and iteration.
-- [Use playgrounds in Azure AI Foundry](https://learn.microsoft.com/azure/ai-foundry/how-to/playgrounds) — test prompt variations and compare outputs.
+- [Prompt engineering concepts](https://learn.microsoft.com/azure/ai-services/openai/concepts/prompt-engineering) — clear guidance on prompt structure and iteration.
+- [Use playgrounds in Microsoft Foundry](https://learn.microsoft.com/azure/ai-foundry/quickstarts/get-started-playground) — test prompt variations and compare outputs.
 - [Azure AI Content Safety overview](https://learn.microsoft.com/azure/ai-services/content-safety/overview) — moderation and prompt protection concepts.
-- [Develop generative AI solutions with Azure AI Foundry](https://learn.microsoft.com/training/paths/develop-generative-ai-solutions-azure-ai-foundry/) — Microsoft Learn path for stronger prompting practice.
+- [Develop generative AI solutions with Microsoft Foundry](https://learn.microsoft.com/training/browse/?products=azure-ai-foundry) — Microsoft Learn modules for stronger prompting practice.
 
 <div class="callout-tip" markdown="1">
-Ready to refine the assistant behavior? [📋 Open Challenge Guide](../../challenges/challenge-02-prompt-engineering/README.md)
+Ready to refine the assistant behavior? **Open the full challenge guide on GitHub:** [challenges/challenge-02-prompt-engineering](https://github.com/olivomarco/ai-hackathon/tree/main/challenges/challenge-02-prompt-engineering) — or open the repository in Codespaces (badge above) and follow the README in `challenges/challenge-02-prompt-engineering/`.
 </div>
 
 <nav class="page-nav">

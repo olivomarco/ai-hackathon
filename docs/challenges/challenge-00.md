@@ -7,7 +7,7 @@ nav_order: 1
 <div class="hero-panel challenge-hero">
   <span class="hero-kicker">Challenge 00 • Foundation</span>
   <h1>Setup &amp; Orientation</h1>
-  <p class="hero-tagline">Start by making the environment boring—in the best possible way. This challenge introduces Azure AI Foundry, shows how a Hub and Project fit together, and gets every team into a working devcontainer so the rest of the day can focus on building instead of fixing setup.</p>
+  <p class="hero-tagline">Start by making the environment boring—in the best possible way. This challenge introduces Microsoft Foundry, shows how a Foundry resource and project fit together, and gets every team into a working devcontainer so the rest of the day can focus on building instead of fixing setup.</p>
   <div class="meta-strip">
     <span class="meta-badge">⏱️ 30 min</span>
     <span class="difficulty-badge difficulty-1">⭐ Beginner</span>
@@ -17,7 +17,7 @@ nav_order: 1
 
 ## What this challenge is about
 
-Azure AI Foundry is the control room for the hackathon: it is where you organize resources, browse models, run playground experiments, and eventually evaluate and deploy your app. In this first stop, participants build the mental model for how a **Hub** supports shared infrastructure and how a **Project** becomes the team’s day-to-day workspace.
+Microsoft Foundry is the control room for the hackathon: it is where you organize resources, browse models, run playground experiments, and eventually evaluate and deploy your app. In this first stop, participants build the mental model for how a **Foundry resource** provides shared infrastructure and how a **Project** becomes the team's day-to-day workspace.
 
 The other half of the challenge is environment confidence. The devcontainer and Azure CLI setup matter because they remove machine drift, package mismatches, and authentication surprises before later challenges depend on Python code, SDKs, and Azure resources.
 
@@ -26,7 +26,7 @@ The other half of the challenge is environment confidence. The devcontainer and 
 <div class="quick-grid">
   <div class="quick-card">
     <h3>A ready-to-use Foundry workspace</h3>
-    <p>A hub, a project, and the right connected resources so the team has a clean starting point for the rest of the hackathon.</p>
+    <p>A Foundry project with auto-provisioned resources so the team has a clean starting point for the rest of the hackathon.</p>
   </div>
   <div class="quick-card">
     <h3>A reliable dev environment</h3>
@@ -41,7 +41,7 @@ The other half of the challenge is environment confidence. The devcontainer and 
 ## Key concepts
 
 <div class="callout-info" markdown="1">
-- **Hub** — the shared management layer for teams, resources, governance, and cross-project organization.
+- **Foundry resource** — the Azure resource that provides shared infrastructure, networking, and RBAC for all projects within it.
 - **Project** — the working space where participants deploy models, test prompts, run evaluations, and manage files.
 - **Model Catalog** — the marketplace-style view of available models, capabilities, providers, and deployment options.
 - **Devcontainer** — the reproducible developer environment that gives every participant the same tooling and dependencies.
@@ -56,7 +56,7 @@ The other half of the challenge is environment confidence. The devcontainer and 
 - [Authenticate to Azure using Azure CLI](https://learn.microsoft.com/cli/azure/authenticate-azure-cli) — quick guide for sign-in and subscription selection.
 
 <div class="callout-tip" markdown="1">
-Ready to do the hands-on work? [📋 Open Challenge Guide](../../challenges/challenge-00-setup/README.md)
+Ready to do the hands-on work? **Open the full challenge guide on GitHub:** [challenges/challenge-00-setup](https://github.com/olivomarco/ai-hackathon/tree/main/challenges/challenge-00-setup) — or open the repository in Codespaces (badge above) and follow the README in `challenges/challenge-00-setup/`.
 </div>
 
 <nav class="page-nav">

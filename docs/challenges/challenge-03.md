@@ -50,13 +50,18 @@ That orchestration model is especially useful when you want repeatability. In th
 
 ## Learn before you build
 
-- [Azure AI Foundry Prompt Flow overview](https://learn.microsoft.com/azure/ai-foundry/how-to/prompt-flow) — core concepts and workflow model.
-- [Develop flows in Azure AI Foundry](https://learn.microsoft.com/azure/ai-foundry/how-to/flow-develop) — authoring, testing, and iteration guidance.
-- [Prompt engineering concepts in Azure AI Foundry](https://learn.microsoft.com/azure/ai-foundry/concepts/prompt-engineering) — helpful framing for node prompts and output contracts.
-- [Develop generative AI solutions with Azure AI Foundry](https://learn.microsoft.com/training/paths/develop-generative-ai-solutions-azure-ai-foundry/) — broader Learn path that includes orchestration patterns.
+- [Microsoft Foundry Prompt Flow overview](https://learn.microsoft.com/azure/ai-foundry/how-to/prompt-flow) — core concepts and workflow model.
+- [Develop flows in Microsoft Foundry](https://learn.microsoft.com/azure/ai-foundry/how-to/flow-develop) — authoring, testing, and iteration guidance.
+- [Prompt engineering concepts](https://learn.microsoft.com/azure/ai-services/openai/concepts/prompt-engineering) — helpful framing for node prompts and output contracts.
+- [Foundry Agent Service](https://learn.microsoft.com/azure/ai-foundry/concepts/agents) — the forward-looking orchestration path (successor to Prompt Flow for new projects).
+- [Microsoft Foundry learning modules](https://learn.microsoft.com/training/browse/?products=azure-ai-foundry) — broader Learn modules that include orchestration patterns.
+
+<div class="callout-warning" markdown="1">
+**Prompt Flow status:** Prompt Flow feature development ended April 20, 2026 and will be fully retired April 20, 2027 (entering read-only mode at that date). Existing flows continue to run. If you are working after that date or want the forward-looking path, see the [Microsoft Agent Framework migration guide](https://learn.microsoft.com/azure/ai-foundry/how-to/prompt-flow).
+</div>
 
 <div class="callout-tip" markdown="1">
-Ready to wire together a multi-step flow? [📋 Open Challenge Guide](../../challenges/challenge-03-prompt-flow/README.md)
+Ready to wire together a multi-step flow? **Open the full challenge guide on GitHub:** [challenges/challenge-03-prompt-flow](https://github.com/olivomarco/ai-hackathon/tree/main/challenges/challenge-03-prompt-flow) — or open the repository in Codespaces (badge above) and follow the README in `challenges/challenge-03-prompt-flow/`.
 </div>
 
 <nav class="page-nav">

@@ -51,13 +51,13 @@ Participants use built-in metrics such as **groundedness**, **relevance**, **coh
 
 ## Learn before you build
 
-- [Azure AI evaluation concepts](https://learn.microsoft.com/azure/ai-foundry/concepts/evaluation) — package overview and evaluator framing.
-- [Evaluate generative AI apps in Azure AI Foundry](https://learn.microsoft.com/azure/ai-foundry/how-to/evaluate-generative-ai-app) — practical evaluation workflow.
+- [Azure AI evaluation metrics reference](https://learn.microsoft.com/azure/ai-foundry/concepts/evaluation-metrics-built-in) — package overview and evaluator framing.
+- [Evaluate generative AI apps in Microsoft Foundry](https://learn.microsoft.com/azure/ai-foundry/how-to/evaluate-generative-ai-app) — practical evaluation workflow.
 - [Responsible AI guidance for Azure AI](https://learn.microsoft.com/azure/ai-foundry/responsible-use-of-ai-overview) — safety and governance perspective.
 - [Azure AI Content Safety overview](https://learn.microsoft.com/azure/ai-services/content-safety/overview) — moderation and safety capabilities.
 
 <div class="callout-tip" markdown="1">
-Ready to measure quality and safety? [📋 Open Challenge Guide](../../challenges/challenge-05-evaluation/README.md)
+Ready to measure quality and safety? **Open the full challenge guide on GitHub:** [challenges/challenge-05-evaluation](https://github.com/olivomarco/ai-hackathon/tree/main/challenges/challenge-05-evaluation) — or open the repository in Codespaces (badge above) and follow the README in `challenges/challenge-05-evaluation/`.
 </div>
 
 <nav class="page-nav">

@@ -51,13 +51,13 @@ That architecture matters for trust. In this challenge, teams extend the **Unive
 
 ## Learn before you build
 
-- [Retrieval-augmented generation (RAG) in Azure AI Foundry](https://learn.microsoft.com/azure/ai-foundry/concepts/retrieval-augmented-generation) — end-to-end architecture overview.
+- [Retrieval-augmented generation (RAG) in Microsoft Foundry](https://learn.microsoft.com/azure/ai-foundry/concepts/retrieval-augmented-generation) — end-to-end architecture overview.
 - [Azure AI Search overview](https://learn.microsoft.com/azure/search/search-what-is-azure-search) — retrieval service fundamentals.
-- [Use your data in Azure AI Foundry](https://learn.microsoft.com/azure/ai-foundry/how-to/connections-add-data) — grounded chat and data-connection workflow.
-- [Develop generative AI solutions with Azure AI Foundry](https://learn.microsoft.com/training/paths/develop-generative-ai-solutions-azure-ai-foundry/) — broader Learn path that includes retrieval patterns.
+- [RAG quickstart with Azure AI Search](https://learn.microsoft.com/azure/search/search-get-started-rag) — grounded chat and data-connection workflow.
+- [Develop generative AI apps on Microsoft Foundry](https://learn.microsoft.com/training/paths/develop-generative-ai-apps/) — broader Learn path that includes retrieval patterns.
 
 <div class="callout-tip" markdown="1">
-Ready to ground the assistant on real data? [📋 Open Challenge Guide](../../challenges/challenge-04-rag/README.md)
+Ready to ground the assistant on real data? **Open the full challenge guide on GitHub:** [challenges/challenge-04-rag](https://github.com/olivomarco/ai-hackathon/tree/main/challenges/challenge-04-rag) — or open the repository in Codespaces (badge above) and follow the README in `challenges/challenge-04-rag/`.
 </div>
 
 <nav class="page-nav">
