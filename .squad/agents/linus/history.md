@@ -22,3 +22,19 @@
 - Always verify `aux_links` and `nav_external_links` point to the correct org/repo after a repo fork or rename — these URLs are easy to miss and affect all site-level links.
 - The upstream `just-the-docs-default.scss` on `main` uses Liquid `{% include css/just-the-docs.scss.liquid %}`, not a plain `@import` — fetch the actual upstream file to confirm format before creating it.
 
+
+---
+
+## Team Update — 2026-05-28 Session Complete
+
+**Session:** Fact-check & CSS fix (multi-batch agent work)
+
+**Major Outcomes:**
+- **Microsoft Foundry rebrand applied** — All challenges verified & updated (Azure AI Foundry → Microsoft Foundry)
+- **CSS rendering restored** — GitHub Pages now displays with full just-the-docs theme
+- **Content verified against current docs** — All SDK versions, deployment patterns, and terminology current (no breaking changes)
+- **Humanizer pass complete** — 28 files cleaned of AI-generated patterns (emojis, em dashes, promotional vocab)
+- **Cross-page links fixed** — Challenge discovery pages now render without 404s
+- **Platform resilience discovered** — Serial agent dispatch works around 401 outages (parallel spawn causes race conditions)
+
+**Next:** Marco needs to `git push` to deploy CSS fix to live site; maintainers must run `cd docs && bundle install` to regenerate Gemfile.lock.

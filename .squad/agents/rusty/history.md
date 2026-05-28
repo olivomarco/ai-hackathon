@@ -36,3 +36,19 @@
 - **Promotional vocabulary in challenge docs**: "powerful", "showcase", "strong" (as in "a strong bridge from X to Y") are the recurring tells. Search for them when auditing new challenge content.
 - **Rule-of-three**: Appeared in challenge-06 README (listed three things that could be described in one) and coach-hub.md (listed three outcomes). Rewriting to a single direct statement almost always reads better.
 - **PLAN.md Tier 3 scope boundary**: Fix H1-level and tagline em dashes (visible to contributors). Leave phase header and template section em dashes (internal meta-structure that teams use as templates — restructuring breaks convention).
+
+---
+
+## Team Update — 2026-05-28 Session Complete
+
+**Session:** Fact-check & CSS fix (multi-batch agent work)
+
+**Major Outcomes:**
+- **Microsoft Foundry rebrand applied** — All challenges verified & updated (Azure AI Foundry → Microsoft Foundry)
+- **CSS rendering restored** — GitHub Pages now displays with full just-the-docs theme
+- **Content verified against current docs** — All SDK versions, deployment patterns, and terminology current (no breaking changes)
+- **Humanizer pass complete** — 28 files cleaned of AI-generated patterns (emojis, em dashes, promotional vocab)
+- **Cross-page links fixed** — Challenge discovery pages now render without 404s
+- **Platform resilience discovered** — Serial agent dispatch works around 401 outages (parallel spawn causes race conditions)
+
+**Next:** Marco needs to `git push` to deploy CSS fix to live site; maintainers must run `cd docs && bundle install` to regenerate Gemfile.lock.

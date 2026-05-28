@@ -61,3 +61,19 @@
 **Audit result:** Full grep of `docs/**/*.md` for `../../` patterns — no other escaping links found.
 
 **Decision doc:** `.squad/decisions/inbox/basher-cross-page-link-fix.md`
+
+---
+
+## Team Update — 2026-05-28 Session Complete
+
+**Session:** Fact-check & CSS fix (multi-batch agent work)
+
+**Major Outcomes:**
+- **Microsoft Foundry rebrand applied** — All challenges verified & updated (Azure AI Foundry → Microsoft Foundry)
+- **CSS rendering restored** — GitHub Pages now displays with full just-the-docs theme
+- **Content verified against current docs** — All SDK versions, deployment patterns, and terminology current (no breaking changes)
+- **Humanizer pass complete** — 28 files cleaned of AI-generated patterns (emojis, em dashes, promotional vocab)
+- **Cross-page links fixed** — Challenge discovery pages now render without 404s
+- **Platform resilience discovered** — Serial agent dispatch works around 401 outages (parallel spawn causes race conditions)
+
+**Next:** Marco needs to `git push` to deploy CSS fix to live site; maintainers must run `cd docs && bundle install` to regenerate Gemfile.lock.
